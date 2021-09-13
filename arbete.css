@@ -1,0 +1,48 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar{
+      display: flex;
+      align-items: center;
+      padding: 20px;
+  
+  }
+  
+  nav{
+  
+    flex: 1;
+    text-align: center;
+  
+  }
+  
+  nav ul{
+      display: inline-block;  
+      list-style-type: none;
+  
+  }
+  
+  nav ul li{
+  
+    display: inline-block;
+    margin-right: 20px ;
+  }
+
+
+  #welcomeHeader{
+
+text-align: center; 
+ }
+
+
+  
+ 
+ #gallery{
+
+ 
+  width: 100%;
+ }
+  
