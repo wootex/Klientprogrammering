@@ -2,7 +2,9 @@
   #menuImg {
     width: 20%;
     margin: 3%;
+    height: auto;
   }
+  
 * {
 
     margin: 0;
@@ -10,30 +12,34 @@
     box-sizing: border-box;
   }
   
-  .navbar{
-      display: flex;
-      align-items: center;
-      padding: 20px;
-  
+  #menu{
+    display: none;
+    position: absolute;
+    left: 40%; height: auto; top: 0;
+    padding: 0; margin: 0;
+    align-items: center;
   }
-  
-  nav{
-  
-    flex: 1;
-    text-align: center;
-  
+
+  .menuLogo{
+    display: inline;
+    padding-right: 0; margin: 0;
   }
+
   
-  nav ul{
+
+  
+  
+  ul{
       display: inline-block;  
       list-style-type: none;
   
   }
   
-  nav ul li{
+  ul li{
   
     display: inline-block;
     margin-right: 20px ;
+    
   }
 * {
   font-family: 'Roboto Mono', monospace;

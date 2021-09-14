@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Välkommen till oss!</title>
+    <!-- <script src= "https://code.jquery.com/jquery-latest.js"></script> -->
+    <link rel="script" href="script.js">
     <link rel="stylesheet" href="arbete.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +16,17 @@
 </head>
 
 <body>
-    <div class="header">
-        <div id = "menu">
-            <img id = "menuImg" src="menuIcon" alt="menu">
-        </div>
-        <!-- <nav id="menu">
-            <ul>
-                <li> <a href="grupparbete.html">Hem</a></li>
-                <li> <a href="contact.html">Kontakta oss</a></li>
-                <li> <a href="about.html">Om oss</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+    <div class="menuLogo">
+        <img id="menuImg" src="menuIcon" alt="menu" onclick="menuPopup()">
+    </div>
+    <div id="menu">
+        <ul>
+            <li> <a href="grupparbete.html">Hem</a></li>
+            <li> <a href="contact.html">Kontakta oss</a></li>
+            <li> <a href="about.html">Om oss</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
 
-            </ul>
-        </nav> -->
+        </ul>
     </div>
     <div id="welcomeHeader">
         <h1>Välkommen till vårt arbete!</h1>
@@ -55,7 +55,7 @@
         </p>
 
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
