@@ -1,4 +1,9 @@
-*{
+ /* allt på sidan */
+  #menuImg {
+    width: 20%;
+    margin: 3%;
+  }
+* {
 
     margin: 0;
     padding: 0;
@@ -30,22 +35,26 @@
     display: inline-block;
     margin-right: 20px ;
   }
+* {
+  font-family: 'Roboto Mono', monospace;
+}
 
+
+/* grupparbete.html */
 
   #welcomeHeader{
 
 text-align: center; 
  }
 
+/* about.html */
 
-  
- 
 .img {
 
   display: inline-block;
   align-items: center;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
 } 
 
 .aboutHeader{
