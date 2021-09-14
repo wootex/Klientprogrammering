@@ -40,9 +40,16 @@ text-align: center;
 
   
  
- #gallery{
+.img {
 
- 
-  width: 100%;
- }
-  
+  display: inline-block;
+  align-items: center;
+  margin-left: 4%;
+  margin-right: 4%;
+} 
+
+.aboutHeader{
+
+  text-align: center;
+}
+
