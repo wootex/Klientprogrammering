@@ -2,24 +2,25 @@
 <html lang="sv">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Välkommen till oss!</title>
-    <!-- <script src= "https://code.jquery.com/jquery-latest.js"></script> -->
-    <link rel="script" href="script.js">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="arbete.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
     <div class="menuLogo">
-        <img id="menuImg" src="menuIcon" alt="menu" onclick="menuPopup()">
+        <img id="menuImg" src="menuIcon.jpg" alt="menu">
     </div>
-    <div id="menu">
+    <div id="menu" class="hidden">
         <ul>
             <li> <a href="grupparbete.html">Hem</a></li>
             <li> <a href="contact.html">Kontakta oss</a></li>
@@ -33,18 +34,11 @@
     </div>
 
     <div id="gallery">
-        <div class="img">
-            <img src="noel.jpg" alt="noel">
-        </div>
-        <div class="img">
-            <img src="victor.jpg" alt="victor">
-        </div>
-        <div class="img">
-            <img src="wisnu.jpg" alt="wisnu">
-        </div>
-        <div class="img">
-            <img src="anton.jpg" alt="anton">
-        </div>
+        <img class="slidePic" src="anton.jpg">
+        <img class="slidePic" src="noel.jpg">
+        <img class="slidePic" src="victor.jpg">
+        <img class="slidePic" src="wisnu.jpg">
+
 
     </div>
     <div id="text">

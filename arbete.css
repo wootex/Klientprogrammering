@@ -1,7 +1,8 @@
  /* allt på sidan */
   #menuImg {
     width: 20%;
-    margin: 3%;
+    margin: 0;
+    padding: 0;
     height: auto;
   }
   
@@ -13,15 +14,23 @@
   }
   
   #menu{
-    display: none;
     position: absolute;
-    left: 100px; height: auto; top: 25px;
     padding: 0; margin: 0;
+    background-color: rgb(167, 119, 212);
+    height: 16em;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .show{
+    display: block;
   }
 
   .menuLogo{
-    display: inline;
     padding-right: 0; margin: 0;
+    background-color: rgb(188, 147, 226);
   }
 
   
@@ -29,16 +38,14 @@
   
   
   ul{
-      display: inline-block;  
       list-style-type: none;
       
   
   }
   
   ul li{
-  
-    display: inline-block;
-    margin-right: 20px ;
+    margin: 2em 0.5em;
+    color: white;
   }
 * {
   font-family: 'Roboto Mono', monospace;
