@@ -55,15 +55,15 @@ html, body{
 
 /* Början av Kropp */
 #wrapperMain{
-
+  width: auto;
 }
 
   #welcomeHeader{
-
+    width: auto;
   }
 
     #text{
-      
+      width: auto;
     }
 
 
