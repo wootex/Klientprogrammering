@@ -53,20 +53,6 @@ html, body{
 /* _________________ */
 
 
-/* Början av Kropp */
-#wrapperMain{
-  width: auto;
-}
-
-  #welcomeHeader{
-    width: auto;
-  }
-
-    #text{
-      width: auto;
-    }
-
-
 /* Klasser för JQ: #menuIcon $ #wrapperDropdown (döljer/visar drop down och tillhörande barn)*/
 .hidden{
   display: none;
@@ -85,6 +71,7 @@ html, body{
 .postImg{
   width: 100%;
   height: fit-content;
+  display: none;
 }
 
 #post {
@@ -100,4 +87,6 @@ html, body{
   margin-left: 5%;
   margin-right: 5%;
 }
+
+
 
