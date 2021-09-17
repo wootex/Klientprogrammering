@@ -53,6 +53,20 @@ html, body{
 /* _________________ */
 
 
+/* Början av Kropp */
+#wrapperMain{
+
+}
+
+  #welcomeHeader{
+
+  }
+
+    #text{
+      
+    }
+
+
 /* Klasser för JQ: #menuIcon $ #wrapperDropdown (döljer/visar drop down och tillhörande barn)*/
 .hidden{
   display: none;
