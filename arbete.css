@@ -73,7 +73,7 @@ html, body{
   height: fit-content;
 }
 
-#post {
+.post {
   background-color: rgb(179, 164, 192);
   width: auto;
 }
@@ -87,3 +87,19 @@ html, body{
   margin-right: 5%;
 }
 
+.slidePic{
+  width:100%;
+ 
+  height: 100%;
+  
+}
+
+
+.slidePic2{
+  width:100%;
+  height: 100%;
+  
+}
+
+
+.gallery{height: 270px}
