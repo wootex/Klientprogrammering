@@ -1,76 +1,73 @@
- /* allt på sidan */
-  #menuImg {
-    width: 20%;
-    margin: 0;
-    padding: 0;
-    height: auto;
-  }
-  
-* {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  #menu{
-    position: absolute;
-    padding: 0; margin: 0;
-    background-color: rgb(167, 119, 212);
-    height: 16em;
-  }
-
-  .hidden{
-    display: none;
-  }
-
-  .show{
-    display: block;
-  }
-
-  .menuLogo{
-    padding-right: 0; margin: 0;
-    background-color: rgb(188, 147, 226);
-  }
-
-  
-
-  
-  
-  ul{
-      list-style-type: none;
-      
-  
-  }
-  
-  ul li{
-    margin: 2em 0.5em;
-    color: white;
-  }
-* {
+/* preset för allting */
+html, body{
+  padding: 0; margin: 0;
   font-family: 'Roboto Mono', monospace;
 }
 
-
-/* grupparbete.html */
-
-  #welcomeHeader{
-
-text-align: center; 
- }
-
-/* about.html */
-
-.img {
-
-  display: inline-block;
-  align-items: center;
-  margin-left: 3.5%;
-  margin-right: 3.5%;
-} 
-
-.aboutHeader{
-
-  text-align: center;
+/* Början av Header */
+.header{
+  padding: 0 0 0 0; margin: 0;
+  background-color: rgb(149, 94, 194);
+  width: 100%; height: 4em;
 }
+ 
+  #wrapperIcon {
+    width: 4em; height: 4em;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+  
+    #menuIcon{
+      width: auto;
+      margin: 0;
+      padding: 0.6em 0.6em 0.6em 0.6em;
+      height: 2.8em;
+    }
+/* _________________ */
+
+
+/* Början av Dropdown Meny */
+#wrapperDropdown{
+  position: absolute;
+  padding: 0; margin: 0;
+  background-color: rgb(71, 36, 104);
+  height: 0em;
+  width: 10em;
+}
+
+  #dropdownUl{
+    list-style-type: none;
+    padding: 1.5em 0 0 0;
+    margin: 0 0 0 0;
+  }
+
+    .dropdownLi{
+      margin: 0 0 0 0;
+      padding: 0 0 3em 0.8em;
+      color: white;
+    }
+
+      .dropdownA{
+        color: rgb(188, 147, 226);
+      }
+/* _________________ */
+
+
+/* Klasser för JQ: #menuIcon $ #wrapperDropdown (döljer/visar drop down och tillhörande barn)*/
+.hidden{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.open{
+  background-color: rgb(71, 36, 104);
+}
+
+
+
+
+
 
