@@ -1,23 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="arbete.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="header">
-        <nav id="menu">
-            <ul>
-                <li> <a href="grupparbete.html">Hem</a></li>
-                <li> <a href="contact.html">Kontakta oss</a></li>
-                <li> <a href="about.html">Om oss</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+<html lang="sv">
 
-            </ul>
-        </nav>
+<head>
+    <title>Grupp 22</title>
+
+    <!-- Metadata -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Scriptlibrary -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="arbete.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <!-- Sidans Header  -->
+    <div class="header">
+        <div id="wrapperIcon">
+            <img id="menuIcon" src="list.png" alt="menu">
+            <!-- <img id="menuIcon" src="menuIcon.jpg" alt="menu"> -->
+            </figure>
+        </div>
     </div>
-</body>
+
+    <!-- Drop down Meny -->
+    <div id="wrapperDropdown" class="hidden">
+        <ul id="dropdownUl">
+            <li class="dropdownLi"><a class="dropdownA" href="grupparbete.html">Hem</a></li>
+            <li class="dropdownLi"><a class="dropdownA" href="contact.html">Kontakta oss</a></li>
+            <li class="dropdownLi"><a class="dropdownA" href="about.html">Om oss</a></li>
+            <li class="dropdownLi"><a class="dropdownA" href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+    <div id="wrapperMain">
+        <div id="wrapperPortfolio">
+            <h1 class="postTitle">Portfolio</h1>
+        </div>
+        <div id="post">
+            <h3 class="postTitle">MIB-Projektet (Men In Black)</h2>
+                <img class="postImg" src="mib1.jpg" alt="Men In Black">
+                <img class="postImg" src="mib2.png" alt="Men In Black">
+                <img class="postImg" src="mib3.png" alt="Men In Black">
+                <button class="buttonLeft">&#10094;</button>
+                <button class="buttonRight">&#10095;</button>
+                <p class="postText">MIB-Projektet var det första programmeringsprojektet vi genomförde på det
+                    systemvetenskapliga programmet.
+                    Det gick ut på att bygga ett system som agenterna skulle använda för att hålla koll på bland annat
+                    aliens, uppdrag och utrustning.
+                    Systemet programmerades med språket Java och med tillhörande databas i MySQL.
+                </p>
+                <br>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </html>

@@ -81,7 +81,23 @@ html, body{
 }
 
 
+/* CSS för portfolio */
+.postImg{
+  width: 100%;
+  height: fit-content;
+}
 
+#post {
+  background-color: rgb(179, 164, 192);
+  width: auto;
+}
 
+.postTitle{
+  text-align: center;
+}
 
+.postText{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 

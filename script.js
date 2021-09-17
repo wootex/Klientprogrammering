@@ -42,4 +42,6 @@ $(document).ready(function () {
         setTimeout(nextPic, 2500);
     }
 
+    // $(".postImg").addClass("hidden");
+    // var slideIndex = 0;
 });
