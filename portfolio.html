@@ -11,10 +11,12 @@
     <!-- Scriptlibrary -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
 
+    <!-- Css -->
+    <link rel="stylesheet" href="arbete.css">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="arbete.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -38,28 +40,58 @@
             <li class="dropdownLi"><a class="dropdownA" href="portfolio.html">Portfolio</a></li>
         </ul>
     </div>
+
+    <!-- Sidinnehåll -->
     <div id="wrapperMain">
-        <div id="wrapperPortfolio">
-            <h1 class="postTitle">Portfolio</h1>
+
+
+        <div id="wrapperTitel">
+            <h1 id="pageTitel">Portfolio</h1>
         </div>
-        <div id="post">
-            <h3 class="postTitle">MIB-Projektet (Men In Black)</h2>
-                <img class="postImg" src="mib1.jpg" alt="Men In Black">
-                <img class="postImg" src="mib2.png" alt="Men In Black">
-                <img class="postImg" src="mib3.png" alt="Men In Black">
-                <button class="buttonLeft">&#10094;</button>
-                <button class="buttonRight">&#10095;</button>
+
+        <div class="post">
+
+            <h3 class="postTitle">MIB-Projektet (Men In Black)</h3>
+                <div class="gallery">
+                    
+                    <img  class="slidePic slidePic1"  src="mib1.jpg">
+                    <img  class="slidePic slidePic1"  src="mib2.png">
+                    <img  class="slidePic slidePic1"  src="mib3.png">
+                    
+                </div>
+                <button class= "button" id ="pause">Pause</button>
                 <p class="postText">MIB-Projektet var det första programmeringsprojektet vi genomförde på det
                     systemvetenskapliga programmet.
                     Det gick ut på att bygga ett system som agenterna skulle använda för att hålla koll på bland annat
                     aliens, uppdrag och utrustning.
                     Systemet programmerades med språket Java och med tillhörande databas i MySQL.
                 </p>
-                <br>
+
         </div>
+
+        <div class="post">
+            <h3 class="postTitle">Project GhostHunt</h3>
+                <div class="gallery">
+                    
+                    <img  class="slidePic slidePic2"  src="ghosthunt1.jpg" alt = fel>
+                    <img  class="slidePic slidePic2"  src="ghosthunt2.jpg" alt = fel>
+                    <img  class="slidePic slidePic2"  src="ghosthunt3.jpg" alt = fel>
+                    
+                </div>
+                <button class= "button" id ="pause2">Pause</button>
+                <p class="postText">MIB-Projektet var det första programmeringsprojektet vi genomförde på det
+                    systemvetenskapliga programmet.
+                    Det gick ut på att bygga ett system som agenterna skulle använda för att hålla koll på bland annat
+                    aliens, uppdrag och utrustning.
+                    Systemet programmerades med språket Java och med tillhörande databas i MySQL.
+                </p>
+
+        </div>
+
+
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="portfolioscript.js"></script>
 
 </html>

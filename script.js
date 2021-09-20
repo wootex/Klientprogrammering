@@ -30,7 +30,7 @@ function validateForm() {
 }
 
 // Körs när sidans DOM-träd har laddat klart
-$(document).ready(function () {
+$(document).ready(function() {
 
 
     // Script för drop down från meny-ikon, visar och döljer med animering
@@ -56,7 +56,6 @@ $(document).ready(function () {
 
             $("#menuIcon").removeClass("open");
         }
-
     });
 
     /* automatic slideshow (ska göras om till JQ och metoden .each() )*/
