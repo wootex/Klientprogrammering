@@ -130,3 +130,33 @@ input[type=submit]:hover {
 #contactBody{
   background-color:#f2f2f2;
 }
+
+/* CSS för "about.html" */
+
+.aboutHeader{
+  text-align: center; 
+}
+
+#nameList{
+   
+}
+
+.namesItem{
+  display: block;
+  float: left;
+  clear: left;
+  padding: 1em;
+  margin: 0 35%;
+  letter-spacing: 5px;
+  
+}
+
+#aboutText{
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+}
