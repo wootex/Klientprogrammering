@@ -3,6 +3,7 @@ function validateForm() {
     let firstName = document.forms["myForm"]["fname"].value;
     let lastName = document.forms["myForm"]["lname"].value;
     let email = document.forms["myForm"]["email"].value;
+    let phone = document.forms["myForm"]["phone"].value;
     var mailFormat = /\S+@\S+\.\S+/;
     var phoneFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
 
@@ -14,18 +15,18 @@ function validateForm() {
         alert("Vänligen ange ett korrekt namn!");
         return false;
     }
-    // if (!email.value.match(mailFormat)){
-    //     alert("email skit");
-    //     return false;
-    // }
-    // // if (!phoneFormat.value.match(phoneFormat)){
-    // //     alert("telefonnummer funkar");
-    // //     return true;
-    // // }
-    // // if (mailFormat.test(email.value)) {
-    // //     alert("email skit");
-    // //     return false;
-    // // }
+  
+    
+    if (!mailFormat.test(email)) {
+        alert("Vänligen ange en korrekt e-postadress");
+        return false;
+    }
+
+    if (!phoneFormat.test(phone)) {
+        alert("Vänligen ange ett korrekt telefonnummer");
+        return false;
+    }
+
 }
 
 // Körs när sidans DOM-träd har laddat klart
