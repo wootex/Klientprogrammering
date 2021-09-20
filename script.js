@@ -28,79 +28,79 @@ $(document).ready(function () {
     });
 
     /* automatic slideshow (ska göras om till JQ och metoden .each() )*/
-    var pauseButton = document.getElementById('pause');
-    var playing = true;
-    var slideIndex = 0;
-    var i;
-    var x = document.getElementsByClassName("slidePic");
-    var y = document.getElementsByClassName("slidePic2");
-    setInterval(nextPic, 2000);
-    nextPic2();
-    nextPic();
+    // var pauseButton = document.getElementById('pause');
+    // var playing = true;
+    // var slideIndex = 0;
+    // var i;
+    // var x = document.getElementsByClassName("slidePic");
+    // var y = document.getElementsByClassName("slidePic2");
+    // setInterval(nextPic, 2000);
+    // nextPic2();
+    // nextPic();
 
 
-    function pauseSlideshow() {
-        pauseButton.innerHTML = "Play";
-        playing = false;
-
-
-
-
-    }
-
-    function playSlideShow() {
-        pauseButton.innerHTML = "Pause";
-        playing = true;
-
-
-    }
-
-    pauseButton.onclick = function () {
-        if (playing) { pauseSlideshow(); }
-        else { playSlideShow(); }
-
-
-    }
-
-    function nextPic() {
-
-        if (playing == false) { return; }
+    // function pauseSlideshow() {
+    //     pauseButton.innerHTML = "Play";
+    //     playing = false;
 
 
 
-        for (i = 0; i < x.length; i++) {
 
-            x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) { slideIndex = 1 }
-        x[slideIndex - 1].style.display = "block";
+    // }
 
-
-    }
+    // function playSlideShow() {
+    //     pauseButton.innerHTML = "Pause";
+    //     playing = true;
 
 
-    function nextPic2() {
+    // }
+
+    // pauseButton.onclick = function () {
+    //     if (playing) { pauseSlideshow(); }
+    //     else { playSlideShow(); }
 
 
-        if (playing == false) {
-            return;
+    // }
+
+    // function nextPic() {
+
+    //     if (playing == false) { return; }
+
+
+
+    //     for (i = 0; i < x.length; i++) {
+
+    //         x[i].style.display = "none";
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > x.length) { slideIndex = 1 }
+    //     x[slideIndex - 1].style.display = "block";
+
+
+    // }
+
+
+    // function nextPic2() {
+
+
+    //     if (playing == false) {
+    //         return;
 
             
-        }
+    //     }
 
-        var i;
+    //     var i;
 
-        for (i = 0; i < y.length; i++) {
+    //     for (i = 0; i < y.length; i++) {
 
-            y[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > y.length) { slideIndex = 1 }
-        y[slideIndex - 1].style.display = "block";
+    //         y[i].style.display = "none";
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > y.length) { slideIndex = 1 }
+    //     y[slideIndex - 1].style.display = "block";
 
 
-    }
+    // }
 
 });
 
