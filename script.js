@@ -29,33 +29,43 @@ $(document).ready(function () {
 
     /* automatic slideshow (ska göras om till JQ och metoden .each() )*/
     var pauseButton = document.getElementById('pause');
+    var pauseButton2 = document.getElementById('pause2');
     var playing = true;
     var slideIndex = 0;
     var i;
     var x = document.getElementsByClassName("slidePic");
     var y = document.getElementsByClassName("slidePic2");
     setInterval(nextPic, 2000);
+    setInterval(nextPic2, 2000);
     nextPic2();
     nextPic();
 
 
     function pauseSlideshow() {
         pauseButton.innerHTML = "Play";
+        pauseButton2.innerHTML = "Play";
+        
         playing = false;
-
-
-
 
     }
 
     function playSlideShow() {
         pauseButton.innerHTML = "Pause";
+        pauseButton2.innerHTML = "Pause";
         playing = true;
 
 
     }
 
     pauseButton.onclick = function () {
+        if (playing) { pauseSlideshow(); }
+        else { playSlideShow(); }
+
+
+    }
+
+
+    pauseButton2.onclick = function () {
         if (playing) { pauseSlideshow(); }
         else { playSlideShow(); }
 
