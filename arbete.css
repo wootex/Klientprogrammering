@@ -71,49 +71,58 @@ html, body{
 .hidden{
   display: none;
 }
-
 .show{
   display: block;
 }
-
 .open{
   background-color: rgb(71, 36, 104);
 }
 
 
-/* CSS för portfolio */
-.postImg{
-  width: 100%;
-  height: fit-content;
+
+/* Kontent på sidan (exk. meny) */
+#wrapperMain{
+width: 100%; height: 100%;
+background-color: #f2f2f2;
+padding: 0;
+margin: 0;
 }
+  /* Titel */
+  #wrapperTitel{
+    padding: 2em 0 2.5em 0;
 
-.post {
-  background-color: rgb(179, 164, 192);
-  width: auto;
-}
+  }
+    #pageTitel{
+      text-align: center;
+      margin: 0;
+    }
 
-.postTitle{
-  text-align: center;
-}
-
-.postText{
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.slidePic{
-  width:100%;
- 
-  height: 100%;
-  
-}
-
-
-.slidePic2{
-  width:100%;
-  height: 100%;
-  
-}
-
-
-.gallery{height: 270px}
+  /* Varje post */
+  .post {
+    width: 92%; height: auto;
+    background-color: rgb(179, 164, 192);
+    margin: 0 auto 3em auto;
+    padding: 1em 0 0 0;
+    border: rgb(149, 94, 194) solid 0.4em;
+  }
+    .postTitle{
+      text-align: center;
+      margin: 0 0 1.2em 0;
+    }   
+      .gallery{
+        width: 90%; height: auto;
+        margin: 0 auto 0 auto;
+      }
+        .slidePic{
+          width: 100%; height: 15em;
+          position: 0;
+        }
+      .button{
+        margin: 2% 0 0 5%;
+      }
+      .postText{
+        width: 90%;
+        padding: 5% 0 8% 0;
+        margin: 0 auto 0 auto;
+        max-width: 38em;
+      }
