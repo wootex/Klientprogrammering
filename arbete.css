@@ -129,9 +129,6 @@ input[type=submit]:hover {
   display: table;
 }
 
-.body{
-  
-}
 
 /* CSS för "about.html" */
 
@@ -153,20 +150,23 @@ input[type=submit]:hover {
   display: block;
   padding: 0.5em;
   margin: 0 auto 1em auto;
-  /* letter-spacing: 5px; */
   font-size: 1.4em;
   text-align: center;
+  
+  width: 70%; 
 
-  width: 80%; 
-
-  border: 1px solid #ccc; 
+  border-style: outset;
+  border-width: 10px;
+  border-color: rgb(149, 94, 194);
   box-sizing: border-box; 
-  background-color: white;
+  background-color: rgb(149, 94, 194);
 }
-#nameLink{
+.nameLink{
   /* padding: 0 0 0 20em ;
   margin: 0 auto 0 auto;
   text-align: center; */
+  color: white;
+  text-decoration: none;
 }
 
 #aboutText{
