@@ -2,6 +2,7 @@
 html, body{
   padding: 0; margin: 0;
   font-family: 'Roboto Mono', monospace;
+  background-color:#f2f2f2;
 }
 
 /* Början av Header */
@@ -127,8 +128,8 @@ input[type=submit]:hover {
   display: table;
 }
 
-#contactBody{
-  background-color:#f2f2f2;
+.body{
+  
 }
 
 /* CSS för "about.html" */
@@ -138,25 +139,43 @@ input[type=submit]:hover {
 }
 
 #nameList{
-   
+   padding: 1em 0 0 0;
+}
+#names{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  width: auto;
+  height: auto;
 }
 
 .namesItem{
   display: block;
-  float: left;
-  clear: left;
-  padding: 1em;
-  margin: 0 35%;
-  letter-spacing: 5px;
-  
+  padding: 0.5em;
+  margin: 0 auto 1em auto;
+  /* letter-spacing: 5px; */
+  font-size: 1.4em;
+  text-align: center;
+
+  width: 80%; 
+
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+  background-color: white;
+}
+#nameLink{
+  /* padding: 0 0 0 20em ;
+  margin: 0 auto 0 auto;
+  text-align: center; */
 }
 
 #aboutText{
-  width: 100%; 
+  width: 80%; 
   padding: 12px; 
   border: 1px solid #ccc; 
   border-radius: 4px; 
   box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px;
+  margin: 0 auto 0 auto ;
+  /* margin-top: 6px; 
+  margin-bottom: 16px; */
+  background-color: white;
 }
