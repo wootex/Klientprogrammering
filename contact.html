@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grupp 22</title>
+
+    <!-- Metadata -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Scriptlibrary -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="arbete.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
-    
+
+<body id="contactBody">
+    <!-- Sidans Header -->
+    <div class="header">
+        <div id="wrapperIcon">
+            <img id="menuIcon" src="list.png" alt="menu">
+            <!-- <img id="menuIcon" src="menuIcon.jpg" alt="menu"> -->
+
+        </div>
+    </div>
+    <div id="wrapperDropdown" class="hidden">
+        <ul id="dropdownUl">
+            <li class="dropdownLi"><a class="dropdownA" href="grupparbete.html">Hem</a></li>
+            <li class="dropdownLi"><a class="dropdownA" href="contact.html">Kontakta oss</a></li>
+            <li class="dropdownLi"><a class="dropdownA" href="about.html">Om oss</a></li>
+            <li class="dropdownLi"><a class="dropdownA" href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+
+    <div class="contactForm">
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+            <label for="fname">Förnamn</label>
+            <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn...">
+
+            <label for="lname">Efternamn</label>
+            <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn...">
+
+            <label for="email">Epost</label>
+            <input type="text" id="email" name="email" placeholder="Din epostadress...">
+
+            <label for="phone">Telefonnummer</label>
+            <input type="text" id="phone" name="phone" placeholder="Ditt telefonnummer...">
+
+            <label for="subject">Ditt ärende</label>
+            <textarea id="subject" name="subject" placeholder="Skriv något om ditt ärende..."
+                style="height:200px"></textarea>
+
+            <label for="contact">Hur vill du helst bli kontaktad?</label>
+            <select id="contact" name="contact">
+                <option value="phone">Telefon</option>
+                <option value="email">Epost</option>
+            </select>
+            <div class="alert">
+                <input type="submit" value="Skicka">
+
+            </div>
+
+
+        </form>
+    </div>
+
+
+    <!-- Script ready(function(){}); -->
+    <script src="script.js"></script>
 </body>
+
 </html>
