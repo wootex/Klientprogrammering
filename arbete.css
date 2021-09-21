@@ -5,6 +5,12 @@ html, body{
   background-color:#f2f2f2;
 }
 
+p{
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2em;
+  word-spacing: 0.05em;
+}
+
 /* Början av Header */
 .header{
   padding: 0 0 0 0; margin: 0;
@@ -79,11 +85,11 @@ padding: 0;
 margin: 0;
 }
   /* Titel */
-  #wrapperTitel{
+  .wrapperTitle{
     padding: 2em 0 2.5em 0;
 
   }
-    #pageTitel{
+    .pageTitle{
       text-align: center;
       margin: 0;
     }
@@ -180,7 +186,7 @@ input[type=submit]:hover {
   margin-bottom: 16px; */
   background-color: white;
 }
-  /* Varje post */
+  /* Varje "inlägg" i portfolio */
   .post {
     width: 92%; height: auto;
     background-color: rgb(179, 164, 192);
@@ -208,3 +214,16 @@ input[type=submit]:hover {
         margin: 0 auto 0 auto;
         max-width: 38em;
       }
+
+/* homepage */      
+#novahuset{
+  width: 100%;
+  height: 100%;
+}
+#textDiv{
+  
+}
+
+#frontpageText{
+  margin: 5% 0 0 0;
+}
