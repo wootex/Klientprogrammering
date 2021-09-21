@@ -2,54 +2,50 @@
 <html lang="sv">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grupp 22</title>
+
+    <!-- Metadata -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Scriptlibrary -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="arbete.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
 
 
+    <!-- Sidans Header  -->
     <div class="header">
-        <nav id="menu">
-            <ul>
-                <li> <a href="grupparbete.html">Hem</a></li>
-                <li> <a href="contact.html">Kontakta oss</a></li>
-                <li> <a href="about.html">Om oss</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-
-            </ul>
-        </nav>
+        <div id="wrapperIcon">
+            <img id="menuIcon" src="list.png" alt="menu">
+            <!-- <img id="menuIcon" src="menuIcon.jpg" alt="menu"> -->
+        </div>
     </div>
-    <div class="aboutHeader">
+
+    <!-- Drop down Meny -->
+    <div id="wrapperDropdown" class="hidden">
+        <ul id="dropdownUl">
+            <li class="dropdownLi"><a class="dropdownA" href="grupparbete.html">Hem</a></li>
+            <li class="dropdownLi"><a class="dropdownA" href="contact.html">Kontakta oss</a></li>
+            <li class="dropdownLi"><a class="dropdownA" href="about.html">Om oss</a></li>
+            <li class="dropdownLi"><a class="dropdownA" href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+    <div id="aboutHeader">
         <h1>
             Om oss
         </h1>
     </div>
-    <div id="gallery">
-        <div class="img">
-            <img src="noel.jpg" alt="noel">
-        </div>
-        <div class="img">
-            <img src="victor.jpg" alt="victor">
-        </div>
-        <div class="img">
-            <img src="wisnu.jpg" alt="wisnu">
-        </div>
-        <div class="img">
-            <img src="anton.jpg" alt="anton">
-        </div>
-        <p id="names">
-            <a href="noel.html">Noel Lindgren</a>
-            <a href="victor.html">Victor Hultqvist</a> <br>
-            <a href="andre.html">André Rehnström</a>
-            <a href="anton.html">Anton Lyrberg</a>
 
-        </p>
-    </div>
-    <p>
+    <p id="aboutText">
         Denna grupp består av Noel Lindgren, Anton Lyrberg, André Rehnström och Victor Hultqvist. <br>
         Vi går 2a året på det Systemvetenskapliga programmet på Örebor Universitet. <br>
         Vi är erfarna programmerare inom Java och MySql, men vi håller nu på att fördjupa våra kunskaper inom
@@ -59,7 +55,17 @@
 
     </p>
 
+    <div id="nameList">
+        <ul id="names">
+            <li class="namesItem"><a href="noel.html" class="nameLink">Noel Lindgren</a></li>
+            <li class="namesItem"><a href="victor.html" class="nameLink">Victor Hultqvist</a></li>
+            <li class="namesItem"> <a href="andre.html" class="nameLink">André Rehnström</a></li>
+            <li class="namesItem"><a href="anton.html" class="nameLink">Anton Lyrberg </a></li>
+
+        </ul>
     </div>
+    <!-- Script ready(function(){}); -->
+    <script src="script.js"></script>
 </body>
 
 </html>

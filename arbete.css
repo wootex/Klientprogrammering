@@ -2,6 +2,7 @@
 html, body{
   padding: 0; margin: 0;
   font-family: 'Roboto Mono', monospace;
+  background-color:#f2f2f2;
 }
 
 /* Början av Header */
@@ -53,20 +54,6 @@ html, body{
 /* _________________ */
 
 
-/* Början av Kropp */
-#wrapperMain{
-  width: auto;
-}
-
-  #welcomeHeader{
-    width: auto;
-  }
-
-    #text{
-      width: auto;
-    }
-
-
 /* Klasser för JQ: #menuIcon $ #wrapperDropdown (döljer/visar drop down och tillhörande barn)*/
 .hidden{
   display: none;
@@ -79,6 +66,10 @@ html, body{
 }
 
 
+/* CSS för portfolio */
+/* .postImg{
+  width: 100%;
+} */
 
 /* Kontent på sidan (exk. meny) */
 #wrapperMain{
@@ -97,6 +88,98 @@ margin: 0;
       margin: 0;
     }
 
+#currentSlides{
+  text-align: center;
+}
+
+/* CSS för kontakta oss */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  
+}
+
+
+.contactForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  bottom: 20%;
+  display: table;
+}
+
+
+/* CSS för "about.html" */
+
+.aboutHeader{
+  text-align: center; 
+}
+
+#nameList{
+   padding: 1em 0 0 0;
+}
+#names{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  width: auto;
+  height: auto;
+}
+
+.namesItem{
+  display: block;
+  padding: 0.5em;
+  margin: 0 auto 1em auto;
+  font-size: 1.4em;
+  text-align: center;
+  
+  width: 70%; 
+
+  border-style: outset;
+  border-width: 10px;
+  border-color: rgb(149, 94, 194);
+  box-sizing: border-box; 
+  background-color: rgb(149, 94, 194);
+}
+.nameLink{
+  /* padding: 0 0 0 20em ;
+  margin: 0 auto 0 auto;
+  text-align: center; */
+  color: white;
+  text-decoration: none;
+}
+
+#aboutText{
+  width: 80%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin: 0 auto 0 auto ;
+  /* margin-top: 6px; 
+  margin-bottom: 16px; */
+  background-color: white;
+}
   /* Varje post */
   .post {
     width: 92%; height: auto;
