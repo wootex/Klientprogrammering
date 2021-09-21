@@ -28,7 +28,7 @@ $("#menuIcon").on("click", function () {
 });
 
 // Knappar som länkar till personliga sidor
-$("ul#names li").on("click", function(e){
+$(".namesItem").on("click", function(e){
     var input = $(e.target).text();
 
     switch (input) {

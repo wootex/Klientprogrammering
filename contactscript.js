@@ -32,10 +32,11 @@ $(document).ready(function() {
 
 // Validering av kontaktformulär
 function validateForm() {
-    let firstName = document.forms["myForm"]["fname"].value;
-    let lastName = document.forms["myForm"]["lname"].value;
-    let email = document.forms["myForm"]["email"].value;
-    let phone = document.forms["myForm"]["phone"].value;
+    let firstName = document.forms["form"]["fname"].value;
+    let lastName = document.forms["form"]["lname"].value;
+    let email = document.forms["form"]["email"].value;
+    let phone = document.forms["form"]["phone"].value;
+    let textArea = document.forms["form"]["textArea"].value;
     var mailFormat = /\S+@\S+\.\S+/;
     var phoneFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
 
@@ -47,8 +48,8 @@ function validateForm() {
         alert("Vänligen ange ett korrekt namn!");
         return false;
     }
-  
-    
+
+
     if (!mailFormat.test(email)) {
         alert("Vänligen ange en korrekt e-postadress");
         return false;
@@ -59,4 +60,13 @@ function validateForm() {
         return false;
     }
 
+    if (textArea.length == 0) {
+        alert("Vänligen skriv något om ditt ärende!")
+        return false;
+    }
+
+    else {
+        alert("Tack för att du kontaktar oss! Vi återkopplar så snart vi kan.");
+        
+    }
 }

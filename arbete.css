@@ -143,7 +143,7 @@ input[type=submit]:hover {
 }
 
 #nameList{
-   padding: 1em 0 0 0;
+   padding: 2em 0 0 0;
 }
 #names{
   padding: 0 0 0 0;
@@ -156,7 +156,7 @@ input[type=submit]:hover {
   width: 70%; 
   display: block;
   padding: 0.5em;
-  margin: 0 auto 1em auto;
+  margin: 0 auto 1.5em auto;
 
   font-size: 1.4em;
   text-align: center;
