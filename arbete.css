@@ -16,6 +16,7 @@ p{
   padding: 0 0 0 0; margin: 0;
   background-color: rgb(149, 94, 194);
   width: 100%; height: 4em;
+  /* position: fixed; */
 }
  
   #wrapperIcon {
@@ -162,11 +163,11 @@ input[type=submit] {
   text-decoration: none;
 } */
 
-#aboutText{
+.aboutText{
   width: 95%; 
   padding: 12px; 
   /* border: 1px solid #ccc;  */
-  border: rgb(71, 36, 104) solid 0.5em;
+  border: black solid 1px;
   box-sizing: border-box; 
   margin: 0 auto 0 auto ;
   /* margin-top: 6px; 
@@ -231,4 +232,73 @@ input[type=submit] {
 .personalText{
   margin-left: 1em;
   margin-right: 0.5em;
+}
+
+/* .center {
+  width: 40%;
+  padding: 20px;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  display: inline-block;
+  margin: 0 auto 0 auto;
+} */
+.skillsWrapper{
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+.skillH2{
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.skillBox{
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+
+}
+
+.skillBox p{
+  margin: 0 0 10px;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.skillBox p:nth-child(2){
+  float: right;
+  position: relative;
+  top: -1.6em;
+}
+.skill {
+  background: white;
+  padding: 1px;
+  box-sizing: border-box;
+  border: 1px solid rgb(71, 36, 104);
+  border-radius: 2px;
+}
+
+.skillLevel{
+  background: rgb(149, 94, 194);
+  width: 100%;
+  height: 20px;
+}
+
+.forty{
+  width: 40%;
+}
+.twenty{
+  width: 20%;
+}
+.thirty{
+  width: 30%;
+}
+.seventy{
+  width: 70%;
+}
+.eighty{
+  width: 80%;
 }
