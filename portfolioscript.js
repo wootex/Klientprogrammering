@@ -1,5 +1,7 @@
+// Körs när sidans DOM-träd har laddat klart
 $(document).ready(function () {
     
+    // Script för drop down från meny-ikon, visar och döljer med animering
     $("#menuIcon").on("click", function () {
         var dropdown = $("#wrapperDropdown");
 
@@ -24,6 +26,7 @@ $(document).ready(function () {
         }
     });
 
+    // Funktioner för automatisk slideshow med pause och start.
     var pauseButton = document.getElementById('pause');
     var pauseButton2 = document.getElementById('pause2');
     var playing = true;
@@ -82,4 +85,6 @@ $(document).ready(function () {
         if (slideIndex > y.length) { slideIndex = 1 }
         y[slideIndex - 1].style.display = "block";
     }
+
+
 });
