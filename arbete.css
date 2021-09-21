@@ -153,13 +153,14 @@ input[type=submit]:hover {
 }
 
 .namesItem{
+  width: 70%; 
   display: block;
   padding: 0.5em;
   margin: 0 auto 1em auto;
+
   font-size: 1.4em;
   text-align: center;
-  
-  width: 70%; 
+  color: #000000;
 
   border-style: outset;
   border-width: 10px;
@@ -167,13 +168,13 @@ input[type=submit]:hover {
   box-sizing: border-box; 
   background-color: rgb(149, 94, 194);
 }
-.nameLink{
-  /* padding: 0 0 0 20em ;
+/* .nameLink{
+  padding: 0 0 0 20em ;
   margin: 0 auto 0 auto;
-  text-align: center; */
+  text-align: center;
   color: white;
   text-decoration: none;
-}
+} */
 
 #aboutText{
   width: 80%; 

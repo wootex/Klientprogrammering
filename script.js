@@ -56,7 +56,38 @@ $(document).ready(function() {
 
             $("#menuIcon").removeClass("open");
         }
+        
     });
+
+    $("ul#names li").on("click", function(e){
+        var input = $(e.target).text();
+
+        // alert(input);
+
+        switch (input) {
+            
+            case "Noel Lindgren":
+            window.open("noel.html", "_self");
+            break;
+
+            case "Victor Hultqvist":
+            window.open("victor.html", "_self");
+            break;
+
+            case "André Rehnström":
+            window.open("andre.html", "_self");
+            break;
+
+            case "Anton Lyrberg":
+            window.open("anton.html", "_self");
+            break;
+
+            default:
+            alert("något blev fel!", "_self");
+            break;
+        }
+    });
+
 
     /* automatic slideshow (ska göras om till JQ och metoden .each() )*/
     var slideIndex = 0;
