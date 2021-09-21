@@ -34,7 +34,7 @@ $(document).ready(function () {
     setInterval(nextPic1, 1500);
     setInterval(nextPic2, 1500);
     nextPic2();
-    nextPic();
+    nextPic1();
 
     function pauseSlideshow() {
         pauseButton.innerHTML = "Play";
