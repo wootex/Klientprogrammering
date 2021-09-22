@@ -4,13 +4,11 @@ html, body{
   font-family: 'Roboto Mono', monospace;
   background-color:#f2f2f2;
 }
-
 p{
   font-family: 'Roboto Slab', serif;
   font-size: 1.2em;
   word-spacing: 0.05em;
 }
-
 .main{
   padding: 4em 0 0 0;
 }
@@ -23,13 +21,11 @@ p{
   position: fixed;
   
 }
- 
   #wrapperIcon {
     width: 4em; height: 4em;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
   }
-  
     #menuIcon{
       width: auto;
       margin: 0;
@@ -38,9 +34,8 @@ p{
     }
 /* _________________ */
 
-
 /* Början av Dropdown Meny */
-#wrapperDropdown{
+#wrapperDropdownMobile{
   position: fixed;
   padding: 0; margin: 4em 0 0 0;
   background-color: rgb(71, 36, 104);
@@ -48,24 +43,23 @@ p{
   width: 10em;
 }
 
-  #dropdownUl{
+  #dropdownUlMobile{
     list-style-type: none;
     padding: 1.5em 0 0 0;
     margin: 0 0 0 0;
     position: fixed;
   }
 
-    .dropdownLi{
+    .dropdownLiMobile{
       margin: 0 0 0 0;
       padding: 0 0 3em 0.8em;
       color: white;
     }
 
-      .dropdownA{
+      .dropdownAMobile{
         color: rgb(188, 147, 226);
       }
 /* _________________ */
-
 
 /* Klasser för JQ: #menuIcon $ #wrapperDropdown (döljer/visar drop down och tillhörande barn)*/
 .hidden{
@@ -78,8 +72,75 @@ p{
   background-color: rgb(71, 36, 104);
 }
 
+/* CSS för homepage */      
+#novahuset{
+  width: 100%;
+  height: 100%;
+}
+#frontpageText{
+  margin: 5% 0 0 0;
+}
 
-/* Kontent på sidan (exk. meny) */
+@media screen and (min-width: 768px){
+  .header{
+    display: none;
+  }
+  #wrapperDropdownMobile{
+    display: none;
+  }
+  .main{
+    padding: 0 0 0 0;
+  }
+
+  #wrapperDropdownDesktop{
+    position: fixed;
+    padding: 0; margin: 0 0 0 0;
+    background-color: rgb(71, 36, 104);
+    height: 100%;
+    width: 15%;
+  }
+    #dropdownUlDesktop{
+    list-style-type: none;
+    padding: 1.5em 0 0 0;
+    margin: 0 0 0 0;
+    /* position: relative; */
+    }
+  
+      .dropdownLiDesktop{
+        margin: 0 0 0 0;
+        padding: 0 0 3em 0.8em;
+        color: white;
+      }
+  
+        .dropdownADesktop{
+          color: rgb(188, 147, 226);
+        }
+        .hidden{
+          display: block;
+        }
+
+  #novahuset{
+  margin: 0 0 0 15%;
+  width: 84.99%;
+  height: auto;
+  }
+  #textDiv{
+  margin: 0 3% 0 18%;
+  }
+  #frontpageText{
+  margin: 0 0 0 0;
+  max-width: 90%;
+  padding: 0 auto 0 auto;
+  /* max-width: 70%;
+  position: relative;
+  left: 7.4%;
+  right: 3%;
+  max-width: 600px;  */
+
+  }
+}
+
+/* Kontent på sidan (exk. nav-meny) */
 #wrapperMain{
 width: 100%; height: 100%;
 background-color: #f2f2f2;
@@ -89,16 +150,14 @@ margin: 0;
   /* Titel */
   .wrapperTitle{
     padding: 2em 0 2.5em 0;
-
   }
     .pageTitle{
       text-align: center;
       margin: 0;
     }
-
-#currentSlides{
-  text-align: center;
-}
+      #currentSlides{
+        text-align: center;
+      }
 
 /* CSS för kontakta oss */
 input[type=text], select, textarea {
@@ -110,8 +169,6 @@ input[type=text], select, textarea {
   margin-top: 2%; 
   margin-bottom: 3%;
 }
-
-
 input[type=submit] {
   background-color: rgb(149, 94, 194);
   color: white;
@@ -119,7 +176,6 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
 }
-
 .contactForm {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -128,13 +184,10 @@ input[type=submit] {
   display: table;
 }
 
-
 /* CSS för "about.html" */
-
 .aboutHeader{
   text-align: center; 
 }
-
 #nameList{
    padding: 2em 0 0 0;
 }
@@ -144,7 +197,6 @@ input[type=submit] {
   width: auto;
   height: auto;
 }
-
 .namesItem{
   width: 70%; 
   display: block;
@@ -168,7 +220,6 @@ input[type=submit] {
   color: white;
   text-decoration: none;
 } */
-
 .aboutText{
   width: 95%; 
   padding: 12px; 
@@ -209,16 +260,6 @@ input[type=submit] {
         max-width: 38em;
       }
 
-/* CSS för homepage */      
-#novahuset{
-  width: 100%;
-  height: 100%;
-}
-
-#frontpageText{
-  margin: 5% 0 0 0;
-}
-
 /* CSS för ALLA personliga sidor */
 .img{
   width: 55%;
@@ -234,7 +275,6 @@ input[type=submit] {
   height: auto;
   float: left;
 }
-
 .personalText{
   margin-left: 1em;
   margin-right: 0.5em;
@@ -249,50 +289,46 @@ input[type=submit] {
   display: inline-block;
   margin: 0 auto 0 auto;
 } */
+
+/* Skill bar */
 .skillsWrapper{
   width: 80%;
   margin: 0 auto 0 auto;
 }
-
 .skillH2{
   margin: 0;
   padding: 0;
   letter-spacing: 2px;
   text-align: center;
 }
-
 .skillBox{
   box-sizing: border-box;
   width: 100%;
   margin: 20px 0;
 
 }
-
 .skillBox p{
   margin: 0 0 10px;
   padding: 0;
   letter-spacing: 1px;
 }
-
 .skillBox p:nth-child(2){
   float: right;
   position: relative;
   top: -1.6em;
 }
-.skill {
+.skill{
   background: white;
   padding: 1px;
   box-sizing: border-box;
   border: 1px solid rgb(71, 36, 104);
   border-radius: 2px;
 }
-
 .skillLevel{
   background: rgb(149, 94, 194);
   width: 100%;
   height: 20px;
 }
-
 .forty{
   width: 40%;
 }
