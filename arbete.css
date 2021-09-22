@@ -11,12 +11,17 @@ p{
   word-spacing: 0.05em;
 }
 
+.main{
+  padding: 4em 0 0 0;
+}
+
 /* Början av Header */
 .header{
   padding: 0 0 0 0; margin: 0;
   background-color: rgb(149, 94, 194);
   width: 100%; height: 4em;
-  /* position: fixed; */
+  position: fixed;
+  
 }
  
   #wrapperIcon {
@@ -36,8 +41,8 @@ p{
 
 /* Början av Dropdown Meny */
 #wrapperDropdown{
-  position: absolute;
-  padding: 0; margin: 0;
+  position: fixed;
+  padding: 0; margin: 4em 0 0 0;
   background-color: rgb(71, 36, 104);
   height: 0em;
   width: 10em;
@@ -47,6 +52,7 @@ p{
     list-style-type: none;
     padding: 1.5em 0 0 0;
     margin: 0 0 0 0;
+    position: fixed;
   }
 
     .dropdownLi{
