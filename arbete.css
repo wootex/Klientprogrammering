@@ -35,7 +35,7 @@ p{
 /* _________________ */
 
 /* Början av Dropdown Meny */
-#wrapperDropdownMobile{
+#wrapperDropdown{
   position: fixed;
   padding: 0; margin: 4em 0 0 0;
   background-color: rgb(71, 36, 104);
@@ -43,20 +43,20 @@ p{
   width: 10em;
 }
 
-  #dropdownUlMobile{
+  #dropdownUl{
     list-style-type: none;
     padding: 1.5em 0 0 0;
     margin: 0 0 0 0;
     position: fixed;
   }
 
-    .dropdownLiMobile{
+    .dropdownLi{
       margin: 0 0 0 0;
       padding: 0 0 3em 0.8em;
       color: white;
     }
 
-      .dropdownAMobile{
+      .dropdownA{
         color: rgb(188, 147, 226);
       }
 /* _________________ */
@@ -85,7 +85,7 @@ p{
   .header{
     display: none;
   }
-  #wrapperDropdownMobile{
+  #wrapperDropdown{
     display: none;
   }
   .main{
@@ -105,19 +105,28 @@ p{
     margin: 0 0 0 0;
     /* position: relative; */
     }
-  
       .dropdownLiDesktop{
         margin: 0 0 0 0;
         padding: 0 0 3em 0.8em;
         color: white;
       }
-  
         .dropdownADesktop{
           color: rgb(188, 147, 226);
         }
         .hidden{
           display: block;
         }
+
+  #wrapperTitle{
+    margin: 0 3% 0 18%;
+    max-width: 90%;
+  margin: 0 auto 0 auto;
+  }
+  #pageTitle{
+    margin: 0;
+    max-width: 90%;
+  margin: 0 auto 0 auto;
+  }
 
   #novahuset{
   margin: 0 0 0 15%;
@@ -130,7 +139,7 @@ p{
   #frontpageText{
   margin: 0 0 0 0;
   max-width: 90%;
-  padding: 0 auto 0 auto;
+  margin: 0 auto 0 auto;
   /* max-width: 70%;
   position: relative;
   left: 7.4%;

@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     // Script för drop down från meny-ikon, visar och döljer med animering
     $("#menuIcon").on("click", function () {
-        var dropdown = $("#wrapperDropdownMobile");
+        var dropdown = $("#wrapperDropdown");
 
         if (dropdown.attr("class") === "hidden") {
             $("#menuIcon").addClass("open");
