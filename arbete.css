@@ -196,6 +196,7 @@ input[type=submit] {
 /* CSS för "about.html" */
 .aboutHeader{
   text-align: center; 
+  padding: 0;
 }
 #nameList{
    padding: 2em 0 0 0;
@@ -222,24 +223,79 @@ input[type=submit] {
   box-sizing: border-box; 
   background-color: rgb(149, 94, 194);
 }
-/* .nameLink{
-  padding: 0 0 0 20em ;
-  margin: 0 auto 0 auto;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-} */
+
 .aboutText{
   width: 95%; 
-  padding: 12px; 
-  /* border: 1px solid #ccc;  */
+  padding: 12px;
   border: black solid 1px;
   box-sizing: border-box; 
   margin: 0 auto 0 auto ;
-  /* margin-top: 6px; 
-  margin-bottom: 16px; */
   background-color: white;
 }
+
+@media screen and (min-width: 768px){
+  .header{
+    display: none;
+  }
+  #wrapperDropdown{
+    display: none;
+  }
+  .main{
+    padding: 0 0 0 0;
+  }
+
+  #wrapperDropdownDesktop{
+    padding: 0; margin: 0 0 0 0;
+    background-color: rgb(71, 36, 104);
+    height: 100%;
+    width: 15%;
+  }
+    #dropdownUlDesktop{
+    list-style-type: none;
+    padding: 1.5em 0 0 0;
+    margin: 0 0 0 0;
+    /* position: relative; */
+    }
+      .dropdownLiDesktop{
+        margin: 0 0 0 0;
+        padding: 0 0 3em 0.8em;
+        color: white;
+      }
+        .dropdownADesktop{
+          color: rgb(188, 147, 226);
+        }
+        .hidden{
+          display: block;
+        }
+        #aboutHeader{
+          text-align: center;
+          margin-top: 0;
+          padding-top: 0.2em;
+          margin: 0 3% 0 18%;
+        }
+        #aboutDiv{
+          margin: 0 3% 0 18%;
+        }
+
+        #nameList{
+          margin: 0 3% 0 18%;
+        }
+        .namesItem{
+          display: inline-block;
+          text-align: center;
+          width: 40%;
+        }
+        /* #textDiv{
+          margin: 0 3% 0 18%;
+          }
+          #frontpageText{
+          margin: 0 0 0 0;
+          max-width: 90%;
+          margin: 0 auto 0 auto;
+          
+          } */
+      }
+
   /* Varje "inlägg" i portfolio */
   .post {
     width: 92%; height: auto;
