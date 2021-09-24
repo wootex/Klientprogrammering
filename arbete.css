@@ -42,13 +42,8 @@ p{
         width: auto;
         margin: 0 0 0 0;
         padding: 0.6em 0.6em 0.6em 0.6em;
-<<<<<<< HEAD
         height: 2.7em;
 
-=======
-        height: 2.8em;
-        float: right;
->>>>>>> wootex
       }
 /* _________________ */
 
@@ -130,8 +125,9 @@ p{
     }
       .dropdownLiDesktop{
         margin: 0 0 0 0;
-        padding: 0 0 70% 0.8em;
+        padding: 0 3% 45% 3%;
         color: white;
+        text-align: center;
       }
         .dropdownADesktop{
         color: rgb(188, 147, 226);
