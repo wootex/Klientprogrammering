@@ -234,39 +234,7 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 768px){
-  .header{
-    display: none;
-  }
-  #wrapperDropdown{
-    display: none;
-  }
-  .main{
-    padding: 0 0 0 0;
-  }
-
-  #wrapperDropdownDesktop{
-    padding: 0; margin: 0 0 0 0;
-    background-color: rgb(71, 36, 104);
-    height: 100%;
-    width: 15%;
-  }
-    #dropdownUlDesktop{
-    list-style-type: none;
-    padding: 1.5em 0 0 0;
-    margin: 0 0 0 0;
-    /* position: relative; */
-    }
-      .dropdownLiDesktop{
-        margin: 0 0 0 0;
-        padding: 0 0 3em 0.8em;
-        color: white;
-      }
-        .dropdownADesktop{
-          color: rgb(188, 147, 226);
-        }
-        .hidden{
-          display: block;
-        }
+  
         #aboutHeader{
           text-align: center;
           margin-top: 0;
@@ -280,21 +248,19 @@ input[type=submit] {
         #nameList{
           margin: 0 3% 0 18%;
         }
+        #names{
+          margin: 0 3% 0 17%;
+        }
         .namesItem{
           display: inline-block;
           text-align: center;
           width: 40%;
+          padding: 1em;
+          margin: 1em 2em 1em 0;
         }
-        /* #textDiv{
-          margin: 0 3% 0 18%;
-          }
-          #frontpageText{
-          margin: 0 0 0 0;
-          max-width: 90%;
-          margin: 0 auto 0 auto;
-          
-          } */
       }
+
+      
 
   /* Varje "inlägg" i portfolio */
   .post {
