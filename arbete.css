@@ -32,6 +32,19 @@ p{
       padding: 0.6em 0.6em 0.6em 0.6em;
       height: 2.8em;
     }
+    #wrapperHome {
+      width: 4em; height: 4em;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      top: 0; right: 0;
+    }
+      #homeIcon{
+        width: auto;
+        margin: 0;
+        padding: 0.6em 0.6em 0.6em 0.6em;
+        height: 2.8em;
+
+      }
 /* _________________ */
 
 /* Början av Dropdown Meny */
@@ -201,6 +214,7 @@ input[type=submit] {
 /* CSS för "about.html" */
 .aboutHeader{
   text-align: center; 
+  padding: 0;
 }
 #nameList{
    padding: 2em 0 0 0;
@@ -227,24 +241,50 @@ input[type=submit] {
   box-sizing: border-box; 
   background-color: rgb(149, 94, 194);
 }
-/* .nameLink{
-  padding: 0 0 0 20em ;
-  margin: 0 auto 0 auto;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-} */
+
 .aboutText{
   width: 95%; 
-  padding: 12px; 
-  /* border: 1px solid #ccc;  */
+  padding: 12px;
   border: black solid 1px;
   box-sizing: border-box; 
   margin: 0 auto 0 auto ;
-  /* margin-top: 6px; 
-  margin-bottom: 16px; */
   background-color: white;
 }
+
+@media screen and (min-width: 768px){
+  
+        #aboutHeader{
+          text-align: center;
+          margin-top: 0;
+          padding-top: 0.2em;
+          margin: 0 3% 0 18%;
+        }
+        #aboutDiv{
+          padding: 0 3% 0 18%;
+          max-width: 755px;
+          margin: 0 auto 0 auto;
+        }
+
+        #nameList{
+          margin: 0 3% 0 18%;
+        }
+        #names{
+          padding: 0 3% 0 16%;
+          margin: 0 auto 0 auto;
+          
+          max-width: 755px;
+        }
+        .namesItem{
+          display: inline-block;
+          text-align: center;
+          width: 40%;
+          padding: 1em;
+          margin: 1em 2em 1em 0;
+        }
+      }
+
+      
+
   /* Varje "inlägg" i portfolio */
   .post {
     width: 92%; height: auto;
