@@ -122,6 +122,11 @@ p{
     max-width: 90%;
   margin: 0 auto 0 auto;
   }
+
+  /* .pageTitle{
+    text-align: center;
+    margin: 0;
+  } */
   #pageTitle{
     margin: 0;
     max-width: 90%;
