@@ -32,6 +32,19 @@ p{
       padding: 0.6em 0.6em 0.6em 0.6em;
       height: 2.8em;
     }
+    #wrapperHome {
+      width: 4em; height: 4em;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      top: 0; right: 0;
+    }
+      #homeIcon{
+        width: auto;
+        margin: 0;
+        padding: 0.6em 0.6em 0.6em 0.6em;
+        height: 2.8em;
+
+      }
 /* _________________ */
 
 /* Början av Dropdown Meny */
