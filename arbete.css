@@ -242,14 +242,19 @@ input[type=submit] {
           margin: 0 3% 0 18%;
         }
         #aboutDiv{
-          margin: 0 3% 0 18%;
+          padding: 0 3% 0 18%;
+          max-width: 755px;
+          margin: 0 auto 0 auto;
         }
 
         #nameList{
           margin: 0 3% 0 18%;
         }
         #names{
-          margin: 0 3% 0 17%;
+          padding: 0 3% 0 16%;
+          margin: 0 auto 0 auto;
+          
+          max-width: 755px;
         }
         .namesItem{
           display: inline-block;
