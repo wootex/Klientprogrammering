@@ -3,6 +3,27 @@ $(document).ready(function() {
 
 
     // Script för drop down från meny-ikon, visar och döljer med animering
+
+    $("#wrapperIcon").on("mouseover", function () {
+        if($("#wrapperDropdown").attr("class")==="hidden"){
+            $("#menuIcon").addClass("open")
+        }
+    });
+    $("#wrapperIcon").on("mouseout", function () {
+        if($("#wrapperDropdown").attr("class")==="hidden"){
+            $("#menuIcon").removeClass("open")
+        }
+    });
+
+    $("#wrapperHome").on("mouseover", function () {
+        $("#homeIcon").addClass("open");
+        
+    });
+    $("#wrapperHome").on("mouseout", function () {
+        $("#homeIcon").removeClass("open");
+    });
+
+
     $("#menuIcon").on("click", function () {
         var dropdown = $("#wrapperDropdown");
 
@@ -22,10 +43,13 @@ $(document).ready(function() {
             }, 150, function () {
                 dropdown.addClass("hidden").removeClass("show");
             });
-
             $("#menuIcon").removeClass("open");
-        }
-        
+        } 
     });
+
+    $("#wrapperHome").on("click", function () {
+        window.open("grupparbete.html", "_self");
+    });
+
 
 });
