@@ -31,19 +31,89 @@ $(document).ready(function () {
     });
 
     $(".formInput").focusout(function (e) {
+        var phoneFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+        var nameFormat = /^[a-zA-Z]+$/;
+        var mailFormat = /\S+@\S+\.\S+/;
 
+
+        var target = $(e.target);
         var temp = e.target.value;
-        console.log(temp);
-
-        
-            // }
-
-            // $
+        var id = target.attr("id");
 
 
-        
 
-        });
+
+
+
+        switch (id) {
+            case "fname":
+                if (temp === "") {
+                    console.log("Förnamn är tomt");
+                    return;
+
+
+                }
+                if (!nameFormat.test(temp)) {
+                    console.log("Du har siffror");
+                }
+                else { console.log("bajs"); }
+                break;
+
+
+            case "lname":
+                if (temp === "") {
+                    console.log("Efternamn är tomt");
+                    return;
+                }
+
+                if (!nameFormat.test(temp)) {
+                    console.log("Du har siffror");
+                }
+                else { console.log("bajs"); }
+                break;
+
+            case "email":
+                if (temp === "") {
+                    console.log("E-post är tomt");
+                    return;
+                }
+
+                if (!mailFormat.test(temp)) {
+                    console.log("Vänligen ange en korrekt e-postadress");
+
+                }
+                break;
+
+
+            case "phone":
+                if (temp === "") {
+                    console.log("Telefonnummer är tomt");
+                    return;
+                }
+                if (!phoneFormat.test(temp)) {
+
+                    console.log("Du har INTE bara siffror horunge");
+                }
+                break;
+
+
+            case "textArea":
+                if (temp === "") {
+                    console.log("Vänligen ange en beskrivning av ärendet");
+                    return;
+                }
+                if (temp.length < 50) {
+                    console.log("Vänligen beskriv ärendet mer utförligt");
+
+
+                }
+        }
+
+
+
+
+
+    });
 
     //let $temp = $("#phone");
     //if ($temp.length) { 
