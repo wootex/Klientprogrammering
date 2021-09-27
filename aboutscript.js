@@ -32,7 +32,6 @@ $(".namesItem").on("click", function(e){
     var input = $(e.target).text();
 
     switch (input) {
-        
         case "Noel Lindgren":
         window.open("noel.html", "_self");
         break;
@@ -53,8 +52,7 @@ $(".namesItem").on("click", function(e){
         alert("error", "_self");
         break;
     }
+
 });
-
-
 
 });

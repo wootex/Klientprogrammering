@@ -2,8 +2,7 @@
 $(document).ready(function() {
 
 
-    // Script för drop down från meny-ikon, visar och döljer med animering
-
+    // Script för mouseover/out menyikoner
     $("#wrapperIcon").on("mouseover", function () {
         if($("#wrapperDropdown").attr("class")==="hidden"){
             $("#menuIcon").addClass("open")
@@ -23,7 +22,7 @@ $(document).ready(function() {
         $("#homeIcon").removeClass("open");
     });
 
-
+    // Script för drop down från meny-ikon, visar och döljer med animering
     $("#menuIcon").on("click", function () {
         var dropdown = $("#wrapperDropdown");
 
