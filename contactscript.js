@@ -2,6 +2,7 @@
 $(document).ready(function () {
 
 
+<<<<<<< HEAD
     // Script för drop down från meny-ikon, visar och döljer med animering
     $("#menuIcon").on("click", function () {
         var dropdown = $("#wrapperDropdown");
@@ -29,6 +30,9 @@ $(document).ready(function () {
 
 
     });
+=======
+    
+>>>>>>> wootex
 
     $(".formInput").focusout(function (e) {
         var phoneFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
