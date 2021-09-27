@@ -1,39 +1,6 @@
 // Körs när sidans DOM-träd har laddat klart
 $(document).ready(function () {
 
-
-<<<<<<< HEAD
-    // Script för drop down från meny-ikon, visar och döljer med animering
-    $("#menuIcon").on("click", function () {
-        var dropdown = $("#wrapperDropdown");
-
-        if (dropdown.attr("class") === "hidden") {
-            $("#menuIcon").addClass("open");
-            dropdown.removeClass("hidden");
-
-            dropdown.animate({
-                height: "100%"
-            }, 150, function () {
-                dropdown.addClass("show");
-            });
-        }
-        else {
-            dropdown.animate({
-                height: "0%"
-            }, 150, function () {
-                dropdown.addClass("hidden").removeClass("show");
-            });
-
-            $("#menuIcon").removeClass("open");
-        }
-
-
-
-    });
-=======
-    
->>>>>>> wootex
-
     $(".formInput").focusout(function (e) {
         var phoneFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
         var nameFormat = /^[a-zA-Z]+$/;
@@ -43,10 +10,6 @@ $(document).ready(function () {
         var target = $(e.target);
         var temp = e.target.value;
         var id = target.attr("id");
-
-
-
-
 
 
         switch (id) {

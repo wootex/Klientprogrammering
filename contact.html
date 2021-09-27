@@ -48,75 +48,58 @@
         </ul>
     </div>
 
-<<<<<<< HEAD
+
+
+
     <div class="main">
-
-
 
         <div class="contactForm">
 
-            <form name="form" id="contactUs" action=" " onsubmit="validateForm()">
+            <form name="form" id ="contactUs" onsubmit="validateForm()">
 
                 <label for="fname">Förnamn</label>
-                <input type="text" id="fname" name="firstname" class="formInput">
+                <input type="text" id="fname" class="textValue formInput">
                 <p class="errorMessage"> Bajs </p>
 
                 <label for="lname">Efternamn</label>
-                <input type="text" id="lname" name="lastname" class="formInput">
+                <input type="text" id="lname" class="textValue formInput">
                 <p class="errorMessage"> Bajs </p>
 
                 <label for="email">Epost</label>
-                <input type="text" id="email" name="email" class="formInput">
+                <input type="text" id="email" class="textValue formInput">
                 <p class="errorMessage"> Bajs </p>
 
                 <label for="phone">Telefonnummer</label>
-                <input type="text" id="phone" name="phone" class="formInput">
+                <input type="text" id="phone" class="textValue formInput">
                 <p class="errorMessage"> Bajs </p>
 
                 <label for="textArea">Ditt ärende</label>
-                <textarea id="textArea" name="textArea" class="formInput" placeholder="Skriv något om ditt ärende..."style="height:200px"></textarea>
+                <textarea id="textArea" class="textValue formInput"
+                    placeholder="Skriv något om ditt ärende..."></textarea>
                 <p class="errorMessage"> Bajs </p>
-=======
-<div class="main">
-    <div class="contactForm">
-        <form name="form" onsubmit="validateForm()">
 
-            <label for="fname">Förnamn</label>
-            <input type="text" id="fname" class="textValue">
+                <label for="contact">Hur vill du helst bli kontaktad?</label>
+                <select id="contact">
+                    <option>Telefon</option>
+                    <option>Epost</option>
+                </select>
 
-            <label for="lname">Efternamn</label>
-            <input type="text" id="lname" class="textValue">
-
-            <label for="email">Epost</label>
-            <input type="text" id="email" class="textValue">
-
-            <label for="phone">Telefonnummer</label>
-            <input type="text" id="phone" class="textValue">
-
-            <label for="textArea">Ditt ärende</label>
-            <textarea id="textArea" class="textValue" placeholder="Skriv något om ditt ärende..."></textarea>
-
-            <label for="contact">Hur vill du helst bli kontaktad?</label>
-            <select id="contact">
-                <option>Telefon</option>
-                <option>Epost</option>
-            </select>
-            <div class="alert">
-                <input type="submit" value="Skicka" id="submitButton">
+                <div class="alert">
+                    <input type="submit" value="Skicka" id="submitButton">
 
                 </div>
-
->>>>>>> wootex
 
             </form>
 
         </div>
-    </div>
 
     </div>
+
+
 
     <script src="contactscript.js"></script>
     <script src="scriptMenu.js"></script>
+
 </body>
 
 </html>
