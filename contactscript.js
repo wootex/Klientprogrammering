@@ -25,10 +25,37 @@ $(document).ready(function () {
 
             $("#menuIcon").removeClass("open");
         }
-        
+
+
+
     });
 
-});
+    $(".formInput").focusout(function (e) {
+
+        var temp = e.target.value;
+        console.log(temp);
+
+        
+            // }
+
+            // $
+
+
+        
+
+        });
+
+    //let $temp = $("#phone");
+    //if ($temp.length) { 
+
+
+
+}
+
+
+
+
+);
 
 // Validering av kontaktformulär
 function validateForm() {
@@ -67,6 +94,10 @@ function validateForm() {
 
     else {
         alert("Tack för att du kontaktar oss! Vi återkopplar så snart vi kan.");
-        
+
     }
+
 }
+
+
+
