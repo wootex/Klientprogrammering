@@ -1,9 +1,11 @@
 // Körs när sidans DOM-träd har laddat klart
+var complete = false;
 $(document).ready(function () {
+
 
     $(".formInput").focusout(function (e) {
         var phoneFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
-        var nameFormat = /^[a-zA-Z]+$/;
+        var nameFormat = /^[a-öA-Ö]+$/;
         var mailFormat = /\S+@\S+\.\S+/;
 
 
@@ -11,76 +13,166 @@ $(document).ready(function () {
         var temp = e.target.value;
         var id = target.attr("id");
 
+
         switch (id) {
             case "fname":
-                var first =  $("#firstnameText");
+                var first = $("#firstnameText");
+
+
+                if (temp.length < 3) {
+                    first.text("(Förnamn måste vara minst tre bokstäver)");
+
+
+                    return;
+
+                }
+
+
+
                 if (temp === "") {
                     first.text("(Förnamn är tomt)");
-                    first.removeClass("ok");
-                    first.addClass("wrong");
+
+
                     return;
 
                 }
                 if (!nameFormat.test(temp)) {
+                    console.log(first);
                     first.text("(Du kan inte ange siffror)");
-                    first.removeClass("ok");
-                    first.addClass("wrong");
+
+
+                    return;
                 }
-                else { first.text(""); 
-                // first.removeClass("ok");
-                // first.removeClass("wrong");
-            }
+                else {
+                    first.text("");
+
+
+                    complete = true;
+                }
+
                 break;
 
+
             case "lname":
-                var last =  $("#lastnameText");
+                var last = $("#lastnameText");
+
+
+                if (temp.length < 3) {
+                    last.text("(Efternamn måste vara minst tre bokstäver)");
+
+
+                    return;
+
+                }
+
+
                 if (temp === "") {
                     last.text("(Efternamn är tomt)");
-                    last.removeClass("ok");
-                    last.addClass("wrong");
+
+
                     return;
                 }
 
                 if (!nameFormat.test(temp)) {
                     last.text("(Du kan inte ange siffror)");
-                    last.removeClass("ok");
-                    last.addClass("wrong");
+
+
                 }
-                else { last.text(""); 
-                last.removeClass("ok");
-                last.removeClass("wrong");
-            }
+                else {
+                    last.text("");
+
+                    
+                    complete = true;
+                }
                 break;
 
             case "email":
+                var email = $("#adressText");
                 if (temp === "") {
-                    console.log("E-post är tomt");
+                    email.text("E-post är tomt");
+
+
                     return;
                 }
 
                 if (!mailFormat.test(temp)) {
-                    console.log("Vänligen ange en korrekt e-postadress");
+
+                    email.text("(Vänligen ange en korrekt e-postadress)");
+
+
                 }
+                else {
+                    email.text("");
+
+
+                    complete = true;
+                }
+
                 break;
 
+
+
+
             case "phone":
+                var phoneText = $("#phoneText");
                 if (temp === "") {
-                    console.log("Telefonnummer är tomt");
-                    return;
+
+                    phoneText.text("(E-post är tomt)");
+                    
+                                        return;
                 }
                 if (!phoneFormat.test(temp)) {
-                    console.log("Du har INTE bara siffror horunge");
-                }
+                    phoneText.text("(Du har INTE bara siffror horunge)");
+                    
+                                    }
                 break;
 
             case "textArea":
+                var matterText = $("#matterText");
                 if (temp === "") {
-                    console.log("Vänligen ange en beskrivning av ärendet");
+
+                    matterText.text("(Vänligen ange en beskrivning av ärendet)");
+                 
                     return;
                 }
                 if (temp.length < 50) {
-                    console.log("Vänligen beskriv ärendet mer utförligt");
+
+                    matterText.text("(Vänligen beskriv ärendet mer utförligt)");
+                   
+                    return;
+
                 }
+
+                else {
+                    matterText.text("");
+
+                    matterText.removeClass("wrong");
+                    complete = true;
+
+
+                    var button = $("#button");
+                    if (complete === true) {
+                        console.log("knapp ska synas");
+                        button.addClass("submitButton");
+                        button.removeClass("hideButton");
+
+
+
+                    }
+
+                    else {
+                        console.log("knapp ska inte synas");
+                        button.removeClass("submitButton");
+                        button.addClass("hideButton");
+                    }
+
+
+
+                }
+                break;
+
+
+
         }
 
 
@@ -103,43 +195,15 @@ $(document).ready(function () {
 
 // Validering av kontaktformulär
 function validateForm() {
-    let firstName = document.forms["form"]["fname"].value;
-    let lastName = document.forms["form"]["lname"].value;
-    let email = document.forms["form"]["email"].value;
-    let phone = document.forms["form"]["phone"].value;
-    let textArea = document.forms["form"]["textArea"].value;
-    var mailFormat = /\S+@\S+\.\S+/;
-    var phoneFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
 
-    if (firstName.length < 3) {
-        alert("Vänligen ange ett korrekt namn!");
-        return false;
-    }
-    if (lastName.length < 3) {
-        alert("Vänligen ange ett korrekt namn!");
-        return false;
-    }
+    if (complete) alert("Tack för att du kontaktar oss! Vi återkopplar så snart vi kan.");
+    else alert("Något är inte ifyllt");
 
 
-    if (!mailFormat.test(email)) {
-        alert("Vänligen ange en korrekt e-postadress");
-        return false;
-    }
 
-    if (!phoneFormat.test(phone)) {
-        alert("Vänligen ange ett korrekt telefonnummer");
-        return false;
-    }
 
-    if (textArea.length == 0) {
-        alert("Vänligen skriv något om ditt ärende!")
-        return false;
-    }
 
-    else {
-        alert("Tack för att du kontaktar oss! Vi återkopplar så snart vi kan.");
 
-    }
 
 }
 
