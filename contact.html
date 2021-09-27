@@ -39,31 +39,30 @@
 
 <div class="main">
     <div class="contactForm">
-        <form name="form" action=" " onsubmit="validateForm()">
+        <form name="form" onsubmit="validateForm()">
 
             <label for="fname">Förnamn</label>
-            <input type="text" id="fname" name="firstname">
+            <input type="text" id="fname" class="textValue">
 
             <label for="lname">Efternamn</label>
-            <input type="text" id="lname" name="lastname">
+            <input type="text" id="lname" class="textValue">
 
             <label for="email">Epost</label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" class="textValue">
 
             <label for="phone">Telefonnummer</label>
-            <input type="text" id="phone" name="phone">
+            <input type="text" id="phone" class="textValue">
 
             <label for="textArea">Ditt ärende</label>
-            <textarea id="textArea" name="textArea" placeholder="Skriv något om ditt ärende..."
-                style="height:200px"></textarea>
+            <textarea id="textArea" class="textValue" placeholder="Skriv något om ditt ärende..."></textarea>
 
             <label for="contact">Hur vill du helst bli kontaktad?</label>
-            <select id="contact" name="contact">
-                <option value="phone">Telefon</option>
-                <option value="email">Epost</option>
+            <select id="contact">
+                <option>Telefon</option>
+                <option>Epost</option>
             </select>
             <div class="alert">
-                <input type="submit" value="Skicka">
+                <input type="submit" value="Skicka" id="submitButton">
 
             </div>
 
