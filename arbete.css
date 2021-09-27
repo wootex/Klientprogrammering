@@ -74,8 +74,6 @@ p{
         color: rgb(188, 147, 226);
         font-size:larger;
         text-decoration: none;
-        /* text-decoration-color: #000000;
-        text-decoration-thickness: 0.12em; */
       }
 /* _________________ */
 
@@ -121,7 +119,6 @@ p{
     list-style-type: none;
     padding: 4em 0 0 0;
     margin: 0 0 0 0;
-    /* position: relative; */
     }
       .dropdownLiDesktop{
         margin: 0 0 0 0;
@@ -141,13 +138,9 @@ p{
   #wrapperTitle{
     margin: 0 3% 0 18%;
     max-width: 90%;
-  margin: 0 auto 0 auto;
+    margin: 0 auto 0 auto;
   }
 
-  /* .pageTitle{
-    text-align: center;
-    margin: 0;
-  } */
   #pageTitle{
     margin: 0;
     max-width: 90%;
@@ -166,12 +159,6 @@ p{
   margin: 0 0 0 0;
   max-width: 90%;
   margin: 0 auto 0 auto;
-  /* max-width: 70%;
-  position: relative;
-  left: 7.4%;
-  right: 3%;
-  max-width: 600px;  */
-
   }
 }
 
@@ -254,7 +241,7 @@ margin: 0;
   color: #000000;
 
   border-style: outset;
-  border-width: 10px;
+  border-width: 0.6em;
   border-color: rgb(149, 94, 194);
   box-sizing: border-box; 
   background-color: rgb(149, 94, 194);
@@ -262,7 +249,7 @@ margin: 0;
 
 .aboutText{
   width: 95%; 
-  padding: 12px;
+  padding: 0.75em;
   border: black solid 1px;
   box-sizing: border-box; 
   margin: 0 auto 0 auto ;
@@ -358,16 +345,6 @@ margin: 0;
             
           }
           @media screen and (min-width: 1040px){
-            /* .p1{
-              width: 25%;
-              margin: 0 3% 0 18%;
-              display: inline-block;
-            }
-            .p2{
-              width: 25%;
-              margin: 0 3% 0 2%;
-              display: inline-block;
-            } */
             .gallery{
               height: 13em;
             }
@@ -412,16 +389,6 @@ margin: 0;
   margin-right: 0.5em;
 }
 
-/* .center {
-  width: 40%;
-  padding: 20px;
-  background: #f2f2f2;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-  display: inline-block;
-  margin: 0 auto 0 auto;
-} */
-
 /* Skill bar */
 .skillsWrapper{
   width: 80%;
@@ -436,11 +403,11 @@ margin: 0;
 .skillBox{
   box-sizing: border-box;
   width: 100%;
-  margin: 20px 0;
+  margin: 1.5em 0;
 
 }
 .skillBox p{
-  margin: 0 0 10px;
+  margin: 0 0 0.7em;
   padding: 0;
   letter-spacing: 1px;
 }
@@ -451,15 +418,14 @@ margin: 0;
 }
 .skill{
   background: white;
-  padding: 1px;
   box-sizing: border-box;
-  border: 1px solid rgb(71, 36, 104);
-  border-radius: 2px;
+  border: solid 1px black;
+  border-radius: 3px;
 }
 .skillLevel{
   background: rgb(149, 94, 194);
   width: 100%;
-  height: 20px;
+  height: 1.25em
 }
 .forty{
   width: 40%;
@@ -475,4 +441,16 @@ margin: 0;
 }
 .eighty{
   width: 80%;
+}
+
+/* media query för att anpassa resterande sidor till DESKTOP-format */
+@media screen and (min-width: 768px){
+  .contactForm{
+    padding: 2% 3% 0 18%;
+  }
+
+  .personalMain{
+    padding: 2% 3% 0 18%;
+  }
+  
 }
