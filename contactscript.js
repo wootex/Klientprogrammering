@@ -27,8 +27,8 @@ $(document).ready(function () {
                     first.addClass("wrong");
                 }
                 else { first.text(""); 
-                first.removeClass("ok");
-                first.removeClass("wrong");
+                // first.removeClass("ok");
+                // first.removeClass("wrong");
             }
                 break;
 
