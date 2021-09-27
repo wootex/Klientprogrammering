@@ -11,32 +11,45 @@ $(document).ready(function () {
         var temp = e.target.value;
         var id = target.attr("id");
 
-
         switch (id) {
             case "fname":
+                var first =  $("#firstnameText");
                 if (temp === "") {
-                    console.log("Förnamn är tomt");
+                    first.text("(Förnamn är tomt)");
+                    first.removeClass("ok");
+                    first.addClass("wrong");
                     return;
-
 
                 }
                 if (!nameFormat.test(temp)) {
-                    console.log("Du har siffror");
+                    first.text("(Du kan inte ange siffror)");
+                    first.removeClass("ok");
+                    first.addClass("wrong");
                 }
-                else { console.log("bajs"); }
+                else { first.text(""); 
+                first.removeClass("ok");
+                first.removeClass("wrong");
+            }
                 break;
 
-
             case "lname":
+                var last =  $("#lastnameText");
                 if (temp === "") {
-                    console.log("Efternamn är tomt");
+                    last.text("(Efternamn är tomt)");
+                    last.removeClass("ok");
+                    last.addClass("wrong");
                     return;
                 }
 
                 if (!nameFormat.test(temp)) {
-                    console.log("Du har siffror");
+                    last.text("(Du kan inte ange siffror)");
+                    last.removeClass("ok");
+                    last.addClass("wrong");
                 }
-                else { console.log("bajs"); }
+                else { last.text(""); 
+                last.removeClass("ok");
+                last.removeClass("wrong");
+            }
                 break;
 
             case "email":
@@ -47,10 +60,8 @@ $(document).ready(function () {
 
                 if (!mailFormat.test(temp)) {
                     console.log("Vänligen ange en korrekt e-postadress");
-
                 }
                 break;
-
 
             case "phone":
                 if (temp === "") {
@@ -58,11 +69,9 @@ $(document).ready(function () {
                     return;
                 }
                 if (!phoneFormat.test(temp)) {
-
                     console.log("Du har INTE bara siffror horunge");
                 }
                 break;
-
 
             case "textArea":
                 if (temp === "") {
@@ -71,8 +80,6 @@ $(document).ready(function () {
                 }
                 if (temp.length < 50) {
                     console.log("Vänligen beskriv ärendet mer utförligt");
-
-
                 }
         }
 

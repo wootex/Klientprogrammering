@@ -57,28 +57,30 @@
 
             <form name="form" id ="contactUs" onsubmit="validateForm()">
 
-                <label for="fname">Förnamn</label>
+                
+                <p id ="firstnameText" class="errorMessage">  </p>
+                <label for="fname" >Förnamn</label>
                 <input type="text" id="fname" class="textValue formInput">
-                <p class="errorMessage"> Bajs </p>
-
-                <label for="lname">Efternamn</label>
+                
+                <p id ="lastnameText" class="errorMessage">  </p>
+                <label for="lname" >Efternamn</label>
                 <input type="text" id="lname" class="textValue formInput">
-                <p class="errorMessage"> Bajs </p>
-
-                <label for="email">Epost</label>
+                
+                <p id ="adressText" class="errorMessage"> Bajs </p>
+                <label for="email" >Epost</label>
                 <input type="text" id="email" class="textValue formInput">
-                <p class="errorMessage"> Bajs </p>
-
-                <label for="phone">Telefonnummer</label>
+                
+                <p id ="phoneText" class="errorMessage"> Bajs </p>
+                <label for="phone" >Telefonnummer</label>
                 <input type="text" id="phone" class="textValue formInput">
-                <p class="errorMessage"> Bajs </p>
-
-                <label for="textArea">Ditt ärende</label>
+                
+                <p id ="matterText" class="errorMessage"> Bajs </p>
+                <label for="textArea" >Ditt ärende</label>
                 <textarea id="textArea" class="textValue formInput"
                     placeholder="Skriv något om ditt ärende..."></textarea>
-                <p class="errorMessage"> Bajs </p>
+                
 
-                <label for="contact">Hur vill du helst bli kontaktad?</label>
+                <label for="contact" >Hur vill du helst bli kontaktad?</label>
                 <select id="contact">
                     <option>Telefon</option>
                     <option>Epost</option>

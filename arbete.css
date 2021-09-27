@@ -185,7 +185,7 @@ margin: 0;
 .textValue, #contact {
   width: 100%; 
   padding: 0.8em;
-  margin: 2% 0 3% 0;
+  margin: 2% 0 10% 0;
   border: solid 1px black;
   border-radius: 0.2em;
   box-sizing: border-box; 
@@ -454,3 +454,11 @@ margin: 0;
   }
   
 }
+/* sssssssssssssssssssssssssssss */
+.errorMessage{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  float: right;
+  font-size: 0.8em;
+}
+
