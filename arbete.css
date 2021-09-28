@@ -494,6 +494,9 @@ p {
 .seventy {
   width: 70%;
 }
+.seventythree {
+  width: 73%;
+}
 
 .eighty {
   width: 80%;
@@ -511,6 +514,12 @@ p {
   width: 95%;
 }
 
+.ninetyeight {
+  width: 98%;
+}
+.hundred {
+  width: 100%;
+}
 /* media query för att anpassa resterande sidor till DESKTOP-format */
 
 @media screen and (min-width: 768px) {
