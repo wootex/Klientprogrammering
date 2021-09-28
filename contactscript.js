@@ -117,12 +117,12 @@ $(document).ready(function () {
                 var phoneText = $("#phoneText");
                 if (temp === "") {
 
-                    phoneText.text("(E-post är tomt)");
+                    phoneText.text("(Telefon är tomt)");
                     
                                         return;
                 }
                 if (!phoneFormat.test(temp)) {
-                    phoneText.text("(Du har INTE bara siffror horunge)");
+                    phoneText.text("(Du kan endast enge siffror.)");
                     
                                     }
                 break;
@@ -181,8 +181,7 @@ $(document).ready(function () {
 
     });
 
-    //let $temp = $("#phone");
-    //if ($temp.length) { 
+    
 
 
 

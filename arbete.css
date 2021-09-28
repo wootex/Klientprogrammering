@@ -186,7 +186,7 @@ margin: 0;
   width: 100%; 
   padding: 0.8em;
   margin: 2% 0 10% 0;
-  border: solid 1px black;
+  border: solid 0.063em black;
   border-radius: 0.2em;
   box-sizing: border-box; 
 }
@@ -260,7 +260,7 @@ margin: 0;
 .aboutText{
   width: 95%; 
   padding: 0.75em;
-  border: black solid 1px;
+  border: black solid 0.063em;
   box-sizing: border-box; 
   margin: 0 auto 0 auto ;
   background-color: white;
@@ -407,7 +407,7 @@ margin: 0;
 .skillH2{
   margin: 0;
   padding: 0;
-  letter-spacing: 2px;
+  letter-spacing: 0.13em;
   text-align: center;
 }
 .skillBox{
@@ -419,7 +419,7 @@ margin: 0;
 .skillBox p{
   margin: 0 0 0.7em;
   padding: 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.063em;
 }
 .skillBox p:nth-child(2){
   float: right;
@@ -429,29 +429,60 @@ margin: 0;
 .skill{
   background: white;
   box-sizing: border-box;
-  border: solid 1px black;
-  border-radius: 3px;
+  border: solid 0.063em black;
+  border-radius: 0.19em;
 }
 .skillLevel{
   background: rgb(149, 94, 194);
   width: 100%;
   height: 1.25em
 }
-.forty{
-  width: 40%;
+
+.zero{
+  width: 0%;
 }
+
+
 .twenty{
   width: 20%;
 }
+
 .thirty{
   width: 30%;
 }
+.forty{
+  width: 40%;
+}
+
+.fifty{
+  width: 50%;
+}
+
+.sixty{
+width: 60%;
+
+}
+
 .seventy{
   width: 70%;
 }
 .eighty{
   width: 80%;
 }
+.eightyfive{
+
+  width: 85%;
+}
+
+.ninety{
+
+  width: 90%;
+}
+.ninetyfive{
+
+  width: 95%;
+}
+
 
 /* media query för att anpassa resterande sidor till DESKTOP-format */
 @media screen and (min-width: 768px){
@@ -464,7 +495,7 @@ margin: 0;
   }
   
 }
-/* sssssssssssssssssssssssssssss */
+/* Contact errormessage */
 .errorMessage{
   margin: 0 0 0 0;
   padding: 0 0 0 0;
