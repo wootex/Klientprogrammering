@@ -1,13 +1,16 @@
 // Körs när sidans DOM-träd har laddat klart
-var complete = false;
-$(document).ready(function () {
 
+$(document).ready(function () {
+    complete1 = false;
+    complete2 = false;
+    complete3 = false;
+    complete4 = false;
+    complete5 = false;
 
     $(".formInput").focusout(function (e) {
         var phoneFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
         var nameFormat = /^[a-öA-Ö]+$/;
         var mailFormat = /\S+@\S+\.\S+/;
-
 
         var target = $(e.target);
         var temp = e.target.value;
@@ -21,9 +24,7 @@ $(document).ready(function () {
 
                 if (temp.length < 3) {
                     first.text("(Förnamn måste vara minst tre bokstäver)");
-
-
-                    return;
+                    complete1 = false;
 
                 }
 
@@ -31,23 +32,16 @@ $(document).ready(function () {
 
                 if (temp === "") {
                     first.text("(Förnamn är tomt)");
-
-
-                    return;
-
+                    complete1 = false;
                 }
                 if (!nameFormat.test(temp)) {
                     console.log(first);
                     first.text("(Du kan inte ange siffror)");
-
-
-                    return;
+                    complete1 = false;
                 }
                 else {
                     first.text("");
-
-
-                    complete = true;
+                    complete1 = true;
                 }
 
                 break;
@@ -59,30 +53,22 @@ $(document).ready(function () {
 
                 if (temp.length < 3) {
                     last.text("(Efternamn måste vara minst tre bokstäver)");
-
-
-                    return;
-
+                    complete2 = false;
                 }
 
 
                 if (temp === "") {
                     last.text("(Efternamn är tomt)");
-
-
-                    return;
+                    complete2 = false;
                 }
 
                 if (!nameFormat.test(temp)) {
                     last.text("(Du kan inte ange siffror)");
-
-
+                    complete2 = false;
                 }
                 else {
                     last.text("");
-
-                    
-                    complete = true;
+                    complete2 = true;
                 }
                 break;
 
@@ -90,24 +76,19 @@ $(document).ready(function () {
                 var email = $("#adressText");
                 if (temp === "") {
                     email.text("E-post är tomt");
-
-
-                    return;
+                    complete3 = false;
                 }
-
                 if (!mailFormat.test(temp)) {
 
                     email.text("(Vänligen ange en korrekt e-postadress)");
-
-
+                    complete3 = false;
                 }
                 else {
                     email.text("");
 
 
-                    complete = true;
+                    complete3 = true;
                 }
-
                 break;
 
 
@@ -118,59 +99,51 @@ $(document).ready(function () {
                 if (temp === "") {
 
                     phoneText.text("(Telefon är tomt)");
-                    
-                                        return;
+                    complete4 = false;
                 }
                 if (!phoneFormat.test(temp)) {
                     phoneText.text("(Du kan endast enge siffror.)");
-                    
-                                    }
+                    complete4 = false;
+                }
+                else {
+                    phoneText.text("")
+                    complete4 = true;
+                }
                 break;
 
             case "textArea":
                 var matterText = $("#matterText");
                 if (temp === "") {
-
                     matterText.text("(Vänligen ange en beskrivning av ärendet)");
-                 
-                    return;
+                    complete5 = false;
                 }
                 if (temp.length < 50) {
 
                     matterText.text("(Vänligen beskriv ärendet mer utförligt)");
-                   
-                    return;
+                    complete5 = false;
+
 
                 }
 
                 else {
                     matterText.text("");
-
                     matterText.removeClass("wrong");
-                    complete = true;
+                    complete5 = true;
+                }
 
-
-                    var button = $("#button");
-                    if (complete === true) {
-                        console.log("knapp ska synas");
-                        button.addClass("submitButton");
-                        button.removeClass("hideButton");
-
-
-
-                    }
-
-                    else {
-                        console.log("knapp ska inte synas");
-                        button.removeClass("submitButton");
-                        button.addClass("hideButton");
-                    }
-
-
+                var button = $("#button");
+                if (complete1 && complete2 && complete3 && complete4 && complete5) {
+                    console.log("knapp ska synas");
 
                 }
-                break;
 
+
+
+
+                else {
+                    console.log("knapp ska inte synas");
+
+                }
 
 
         }
@@ -179,13 +152,30 @@ $(document).ready(function () {
 
 
 
+
+
     });
 
-    
 
 
+    $("#button").on("click", function (event) {
+
+
+        if ((complete1) && (complete2) && (complete3) && (complete4) && (complete5)) { alert("Tack för att du kontaktar oss! Vi återkopplar så snart vi kan."); }
+        else {
+            event.preventDefault();
+            alert("Något är inte ifyllt");
+        }
+
+    }
+
+
+    );
 
 }
+
+
+
 
 
 
@@ -194,16 +184,9 @@ $(document).ready(function () {
 
 // Validering av kontaktformulär
 function validateForm() {
-
-    if (complete) alert("Tack för att du kontaktar oss! Vi återkopplar så snart vi kan.");
-    else alert("Något är inte ifyllt");
-
-
-
-
-
-
-
+    console.log(complete1 + complete2);
+    if (complete1 && complete2 && complete3 && complete4 && complete5) { alert("Tack för att du kontaktar oss! Vi återkopplar så snart vi kan."); }
+    else { alert("Något är inte ifyllt"); }
 }
 
 
