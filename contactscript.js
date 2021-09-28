@@ -16,7 +16,6 @@ $(document).ready(function () {
         var temp = e.target.value;
         var id = target.attr("id");
 
-
         switch (id) {
             case "fname":
                 var first = $("#firstnameText");
@@ -28,13 +27,11 @@ $(document).ready(function () {
 
                 }
 
-
-
-                if (temp === "") {
+                else if (temp === "") {
                     first.text("(Förnamn är tomt)");
                     complete1 = false;
                 }
-                if (!nameFormat.test(temp)) {
+                else if (!nameFormat.test(temp)) {
                     console.log(first);
                     first.text("(Du kan inte ange siffror)");
                     complete1 = false;
@@ -57,12 +54,12 @@ $(document).ready(function () {
                 }
 
 
-                if (temp === "") {
+                else if (temp === "") {
                     last.text("(Efternamn är tomt)");
                     complete2 = false;
                 }
 
-                if (!nameFormat.test(temp)) {
+                else if (!nameFormat.test(temp)) {
                     last.text("(Du kan inte ange siffror)");
                     complete2 = false;
                 }
@@ -78,7 +75,7 @@ $(document).ready(function () {
                     email.text("E-post är tomt");
                     complete3 = false;
                 }
-                if (!mailFormat.test(temp)) {
+                else if (!mailFormat.test(temp)) {
 
                     email.text("(Vänligen ange en korrekt e-postadress)");
                     complete3 = false;
@@ -91,9 +88,6 @@ $(document).ready(function () {
                 }
                 break;
 
-
-
-
             case "phone":
                 var phoneText = $("#phoneText");
                 if (temp === "") {
@@ -101,7 +95,7 @@ $(document).ready(function () {
                     phoneText.text("(Telefon är tomt)");
                     complete4 = false;
                 }
-                if (!phoneFormat.test(temp)) {
+                else if (!phoneFormat.test(temp)) {
                     phoneText.text("(Du kan endast enge siffror.)");
                     complete4 = false;
                 }
@@ -137,9 +131,6 @@ $(document).ready(function () {
 
                 }
 
-
-
-
                 else {
                     console.log("knapp ska inte synas");
 
@@ -148,15 +139,7 @@ $(document).ready(function () {
 
         }
 
-
-
-
-
-
-
     });
-
-
 
     $("#button").on("click", function (event) {
 
@@ -173,12 +156,6 @@ $(document).ready(function () {
     );
 
 }
-
-
-
-
-
-
 
 );
 

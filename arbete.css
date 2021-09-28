@@ -1,194 +1,219 @@
 /* preset för allting */
-html, body{
-  padding: 0; margin: 0;
+
+html, body {
+  padding: 0;
+  margin: 0;
   font-family: 'Roboto Mono', monospace;
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
 }
-p{
+
+p {
   font-family: 'Roboto Slab', serif;
   font-size: 1.2em;
   word-spacing: 0.05em;
 }
-.main{
+
+.main {
   padding: 4em 0 0 0;
 }
 
 /* Början av Header */
-.header{
-  padding: 0 0 0 0; margin: 0 0 0 0;
-  background-color: rgb(149, 94, 194);
-  width: 100%; height: 4em;
-  position: fixed;
-  
-}
-  #wrapperIcon {
-    width: 4em; height: 4em;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-  }
-    #menuIcon{
-      width: auto;
-      margin: 0 0 0 0;
-      padding: 0.6em 0.6em 0.6em 0.6em;
-      height: 2.8em;
-    }
-    #wrapperHome {
-      width: 4em; height: 4em;
-      margin: 0 0 0 0;
-      padding: 0 0 0 0;
-      position: fixed; top: 0; right: 0;
-    }
-      #homeIcon{
-        width: auto;
-        margin: 0 0 0 0;
-        padding: 0.6em 0.6em 0.6em 0.6em;
-        height: 2.7em;
 
-      }
+.header {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  background-color: rgb(149, 94, 194);
+  width: 100%;
+  height: 4em;
+  position: fixed;
+}
+
+#wrapperIcon {
+  width: 4em;
+  height: 4em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#menuIcon {
+  width: auto;
+  margin: 0 0 0 0;
+  padding: 0.6em 0.6em 0.6em 0.6em;
+  height: 2.8em;
+}
+
+#wrapperHome {
+  width: 4em;
+  height: 4em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#homeIcon {
+  width: auto;
+  margin: 0 0 0 0;
+  padding: 0.6em 0.6em 0.6em 0.6em;
+  height: 2.7em;
+}
+
 /* _________________ */
 
 /* Början av Dropdown Meny */
-#wrapperDropdown{
+
+#wrapperDropdown {
   position: fixed;
-  padding: 0; margin: 4em 0 0 0;
+  padding: 0;
+  margin: 4em 0 0 0;
   background-color: rgb(71, 36, 104);
   height: 0em;
   width: 10em;
 }
 
-  #dropdownUl{
-    list-style-type: none;
-    padding: 1.5em 0 0 0;
-    margin: 0 0 0 0;
-    position: fixed;
-  }
+#dropdownUl {
+  list-style-type: none;
+  padding: 1.5em 0 0 0;
+  margin: 0 0 0 0;
+  position: fixed;
+}
 
-    .dropdownLi{
-      margin: 0 0 0 0;
-      padding: 0 0 4em 0.8em;
-      color: white;
-      
-    }
+.dropdownLi {
+  margin: 0 0 0 0;
+  padding: 0 0 4em 0.8em;
+  color: white;
+}
 
-      .dropdownA{
-        color: rgb(188, 147, 226);
-        font-size:larger;
-        text-decoration: none;
-      }
+.dropdownA {
+  color: rgb(188, 147, 226);
+  font-size: larger;
+  text-decoration: none;
+}
+
 /* _________________ */
 
 /* Klasser för JQ: #menuIcon $ #wrapperDropdown (döljer/visar drop down och tillhörande barn)*/
-.hidden{
+
+.hidden {
   display: none;
 }
-.show{
+
+.show {
   display: block;
 }
-.open{
+
+.open {
   background-color: rgb(71, 36, 104);
 }
 
-/* CSS för homepage */      
-#novahuset{
+/* CSS för homepage */
+
+#novahuset {
   width: 100%;
   height: 100%;
 }
-#frontpageText{
+
+#frontpageText {
   margin: 5% 0 0 0;
 }
 
-@media screen and (min-width: 768px){
-  .header{
+@media screen and (min-width: 768px) {
+  .header {
     display: none;
   }
-  #wrapperDropdown{
+  #wrapperDropdown {
     display: none;
   }
-  .main{
+  .main {
     padding: 0 0 0 0;
   }
-
-  #wrapperDropdownDesktop{
+  #wrapperDropdownDesktop {
     position: fixed;
-    padding: 0; margin: 0 0 0 0;
+    padding: 0;
+    margin: 0 0 0 0;
     background-color: rgb(71, 36, 104);
     height: 100%;
     width: 15%;
   }
-    #dropdownUlDesktop{
+  #dropdownUlDesktop {
     list-style-type: none;
     padding: 4em 0 0 0;
     margin: 0 0 0 0;
-    }
-      .dropdownLiDesktop{
-        margin: 0 0 0 0;
-        padding: 0 3% 45% 3%;
-        color: white;
-        text-align: center;
-      }
-        .dropdownADesktop{
-        color: rgb(188, 147, 226);
-        font-size:larger;
-        text-decoration: none;
-        }
-        .hidden{
-          display: block;
-        }
-
-  #wrapperTitle{
+  }
+  .dropdownLiDesktop {
+    margin: 0 0 0 0;
+    padding: 0 3% 45% 3%;
+    color: white;
+    text-align: center;
+  }
+  .dropdownADesktop {
+    color: rgb(188, 147, 226);
+    font-size: larger;
+    text-decoration: none;
+  }
+  .hidden {
+    display: block;
+  }
+  #wrapperTitle {
     margin: 0 3% 0 18%;
     max-width: 90%;
     margin: 0 auto 0 auto;
   }
-
-  #pageTitle{
+  #pageTitle {
     margin: 0;
     max-width: 90%;
-  margin: 0 auto 0 auto;
+    margin: 0 auto 0 auto;
   }
-
-  #novahuset{
-  margin: 0 0 0 15%;
-  width: 84.99%;
-  height: auto;
+  #novahuset {
+    margin: 0 0 0 15%;
+    width: 84.99%;
+    height: auto;
   }
-  #textDiv{
-  margin: 0 3% 0 18%;
+  #textDiv {
+    margin: 0 3% 0 18%;
   }
-  #frontpageText{
-  margin: 0 0 0 0;
-  max-width: 90%;
-  margin: 0 auto 0 auto;
+  #frontpageText {
+    margin: 0 0 0 0;
+    max-width: 90%;
+    margin: 0 auto 0 auto;
   }
 }
 
 /* Kontent på sidan (exk. nav-meny) */
-#wrapperMain{
-width: 100%; height: 100%;
-background-color: #f2f2f2;
-padding: 0;
-margin: 0;
+
+#wrapperMain {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 0;
+  margin: 0;
 }
-  /* Titel */
-  .wrapperTitle{
-    padding: 2em 0 2.5em 0;
-  }
-    .pageTitle{
-      text-align: center;
-      margin: 0;
-    }
-      #currentSlides{
-        text-align: center;
-      }
+
+/* Titel */
+
+.wrapperTitle {
+  padding: 2em 0 2.5em 0;
+}
+
+.pageTitle {
+  text-align: center;
+  margin: 0;
+}
+
+#currentSlides {
+  text-align: center;
+}
 
 /* CSS för kontakta oss */
+
 .textValue, #contact {
-  width: 100%; 
+  width: 100%;
   padding: 0.8em;
   margin: 2% 0 10% 0;
   border: solid 0.063em black;
   border-radius: 0.2em;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .submitButton {
@@ -199,183 +224,184 @@ margin: 0;
   border-radius: 0.3em;
 }
 
-
-
-
 .contactForm {
   padding: 1.25em;
   background-color: #f2f2f2;
   bottom: 20%;
   display: table;
 }
-.contact{
+
+.contact {
   margin-top: 1em;
 }
 
-.alert{
+.alert {
   margin-top: 1em;
 }
 
-#textArea{
+#textArea {
   height: 16em;
-  
 }
 
 /* CSS för "about.html" */
-.aboutHeader{
-  text-align: center; 
+
+.aboutHeader {
+  text-align: center;
   padding: 0;
 }
-#nameList{
-   padding: 2em 0 0 0;
+
+#nameList {
+  padding: 2em 0 0 0;
 }
-#names{
+
+#names {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   width: auto;
   height: auto;
 }
-.namesItem{
-  width: 70%; 
+
+.namesItem {
+  width: 70%;
   display: block;
   padding: 0.5em;
   margin: 0 auto 1.5em auto;
-
   font-size: 1.4em;
   text-align: center;
   color: #000000;
-
   border-style: outset;
   border-width: 0.6em;
   border-color: rgb(149, 94, 194);
-  box-sizing: border-box; 
+  box-sizing: border-box;
   background-color: rgb(149, 94, 194);
 }
 
-.aboutText{
-  width: 95%; 
+.aboutText {
+  width: 95%;
   padding: 0.75em;
   border: black solid 0.063em;
-  box-sizing: border-box; 
-  margin: 0 auto 0 auto ;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
   background-color: white;
 }
 
-@media screen and (min-width: 768px){
-  
-        #aboutHeader{
-          text-align: center;
-          margin-top: 0;
-          padding-top: 0.2em;
-          margin: 0 3% 0 18%;
-        }
-        #aboutDiv{
-          padding: 0 3% 0 18%;
-          max-width: 755px;
-          margin: 0 auto 0 auto;
-        }
-
-        #nameList{
-          margin: 0 3% 0 18%;
-        }
-        #names{
-          padding: 0 3% 0 16%;
-          margin: 0 auto 0 auto;
-          
-          max-width: 755px;
-        }
-        .namesItem{
-          display: inline-block;
-          text-align: center;
-          width: 40%;
-          padding: 1em;
-          margin: 1em 2em 1em 0;
-        }
-      }
-
-      
-
-  /* Varje "inlägg" i portfolio */
-  .post {
-    width: 92%; height: auto;
-    background-color: rgb(179, 164, 192);
-    margin: 0 auto 3em auto;
-    padding: 1em 0 0 0;
-    border: rgb(71, 36, 104) solid 0.5em;
+@media screen and (min-width: 768px) {
+  #aboutHeader {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0.2em;
+    margin: 0 3% 0 18%;
   }
-    .postTitle{
-      text-align: center;
-      margin: 0 0 1.2em 0;
-    }   
-      .gallery{
-        width: 90%; height: auto;
-        margin: 0 auto 0 auto;
-      }
-        .slidePic{
-          width: 100%; height: 16em;
-        }
-      .button{
-        margin: 2% 0 0 5%;
-      }
-      .postText{
-        width: 90%;
-        padding: 5% 0 8% 0;
-        margin: 0 auto 0 auto;
-        max-width: 38em;
-      }
-      @media screen and (min-width: 768px){
-        .pageTitle{
-          margin: 0 3% 0 18%;
-          
-        }
-        .post{
-          margin: 0 15% 3% 30%;
-          width: auto;
-          max-width: 555px;
-          display: block;
-          text-align: center;
-        }
-        .slidePic{
-          height: auto;
-          max-width: 555px;
-          vertical-align: middle;
-        }
-        .gallery{
-          height: 20em;
-        }
-        @media screen and (min-width: 970px){
-          .gallery{
-            height: 22em;
+  #aboutDiv {
+    padding: 0 3% 0 18%;
+    max-width: 755px;
+    margin: 0 auto 0 auto;
+  }
+  #nameList {
+    margin: 0 3% 0 18%;
+  }
+  #names {
+    padding: 0 3% 0 16%;
+    margin: 0 auto 0 auto;
+    max-width: 755px;
+  }
+  .namesItem {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    padding: 1em;
+    margin: 1em 2em 1em 0;
+  }
+}
 
-            
-          }
-          @media screen and (min-width: 1040px){
-            .gallery{
-              height: 13em;
-            }
-            .postMain{
-              margin: 0 3% 0 18%;
-            }
-            .post{
-              display: inline-block;
-              width: 35%;
-              margin: 0 5% 0 7%;
-            }
-            .button{
-              margin: 15% 0 0 0;
-            }
-            @media screen and (min-width: 1560px){
-              .gallery{
-                height: 16em;
-              }
-            }
-          }
+/* Varje "inlägg" i portfolio */
+
+.post {
+  width: 92%;
+  height: auto;
+  background-color: rgb(179, 164, 192);
+  margin: 0 auto 3em auto;
+  padding: 1em 0 0 0;
+  border: rgb(71, 36, 104) solid 0.5em;
+}
+
+.postTitle {
+  text-align: center;
+  margin: 0 0 1.2em 0;
+}
+
+.gallery {
+  width: 90%;
+  height: auto;
+  margin: 0 auto 0 auto;
+}
+
+.slidePic {
+  width: 100%;
+  height: 16em;
+}
+
+.button {
+  margin: 2% 0 0 5%;
+}
+
+.postText {
+  width: 90%;
+  padding: 5% 0 8% 0;
+  margin: 0 auto 0 auto;
+  max-width: 38em;
+}
+
+@media screen and (min-width: 768px) {
+  .pageTitle {
+    margin: 0 3% 0 18%;
+  }
+  .post {
+    margin: 0 15% 3% 30%;
+    width: auto;
+    max-width: 555px;
+    display: block;
+    text-align: center;
+  }
+  .slidePic {
+    height: auto;
+    max-width: 555px;
+    vertical-align: middle;
+  }
+  .gallery {
+    height: 20em;
+  }
+  @media screen and (min-width: 970px) {
+    .gallery {
+      height: 22em;
+    }
+    @media screen and (min-width: 1040px) {
+      .gallery {
+        height: 13em;
+      }
+      .postMain {
+        margin: 0 3% 0 18%;
+      }
+      .post {
+        display: inline-block;
+        width: 35%;
+        margin: 0 5% 0 7%;
+      }
+      .button {
+        margin: 15% 0 0 0;
+      }
+      @media screen and (min-width: 1560px) {
+        .gallery {
+          height: 16em;
         }
       }
-      
+    }
+  }
+}
 
 /* CSS för ALLA personliga sidor */
-.img{
+
+.img {
   width: 55%;
   height: 100%;
   margin-left: auto;
@@ -384,117 +410,123 @@ margin: 0;
   display: table-cell;
   vertical-align: middle;
 }
-.textDiv{
+
+.textDiv {
   width: auto;
   height: auto;
   float: left;
 }
-.personalText{
+
+.personalText {
   margin-left: 1em;
   margin-right: 0.5em;
 }
 
 /* Skill bar */
-.skillsWrapper{
+
+.skillsWrapper {
   width: 80%;
   margin: 0 auto 0 auto;
 }
-.skillH2{
+
+.skillH2 {
   margin: 0;
   padding: 0;
   letter-spacing: 0.13em;
   text-align: center;
 }
-.skillBox{
+
+.skillBox {
   box-sizing: border-box;
   width: 100%;
   margin: 1.5em 0;
-
 }
-.skillBox p{
+
+.skillBox p {
   margin: 0 0 0.7em;
   padding: 0;
   letter-spacing: 0.063em;
 }
-.skillBox p:nth-child(2){
+
+.skillBox p:nth-child(2) {
   float: right;
   position: relative;
   top: -1.6em;
 }
-.skill{
+
+.skill {
   background: white;
   box-sizing: border-box;
   border: solid 0.063em black;
   border-radius: 0.19em;
 }
-.skillLevel{
+
+.skillLevel {
   background: rgb(149, 94, 194);
   width: 100%;
   height: 1.25em
 }
 
-.zero{
+.zero {
   width: 0%;
 }
 
-
-.twenty{
+.twenty {
   width: 20%;
 }
 
-.thirty{
+.thirty {
   width: 30%;
 }
-.forty{
+
+.forty {
   width: 40%;
 }
 
-.fifty{
+.fifty {
   width: 50%;
 }
 
-.sixty{
-width: 60%;
-
+.sixty {
+  width: 60%;
 }
 
-.seventy{
+.seventy {
   width: 70%;
 }
-.eighty{
+
+.eighty {
   width: 80%;
 }
-.eightyfive{
 
+.eightyfive {
   width: 85%;
 }
 
-.ninety{
-
+.ninety {
   width: 90%;
 }
-.ninetyfive{
 
+.ninetyfive {
   width: 95%;
 }
 
-
 /* media query för att anpassa resterande sidor till DESKTOP-format */
-@media screen and (min-width: 768px){
-  .contactForm{
-    padding: 2% 3% 0 18%;
-  }
 
-  .personalMain{
+@media screen and (min-width: 768px) {
+  .contactForm {
     padding: 2% 3% 0 18%;
   }
-  
+  .personalMain {
+    padding: 2% 3% 0 18%;
+  }
 }
+
 /* Contact errormessage */
-.errorMessage{
+
+.errorMessage {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   float: right;
   font-size: 0.8em;
 }
-
