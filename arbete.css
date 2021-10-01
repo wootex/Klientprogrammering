@@ -114,9 +114,17 @@ p {
   height: 100%;
 }
 
-#frontpageText {
-  margin: 5% 0 0 0;
+.mobileText {
+  margin: 5% 0 0 5%;
 }
+.desktopText {
+  margin: 5% 0 0 0;
+  display: none;
+}
+#sesamPic{
+  display: none;
+}
+
 
 @media screen and (min-width: 768px) {
   .header {
@@ -538,4 +546,29 @@ p {
   padding: 0 0 0 0;
   float: right;
   font-size: 0.8em;
+}
+
+/* media query för homepage (grupparbete.html) */
+@media screen and (min-width: 768px){
+  .desktopText{
+    display: inline-block;
+  }
+  .mobileText{
+    display: none;
+  }
+  #sesamPic{
+    display: inline-block;
+    margin: 2% 3% 0 18%;
+    width: 40%;
+    height: auto;
+    
+  }
+  #novahusetDiv{
+    height: 10%;
+  }
+  #novahuset{
+    width: 84.99%;
+    height: auto;
+  }
+  
 }

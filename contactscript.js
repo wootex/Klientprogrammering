@@ -125,7 +125,6 @@ $(document).ready(function () {
                     complete5 = true;
                 }
 
-                var button = $("#button");
                 if (complete1 && complete2 && complete3 && complete4 && complete5) {
                     console.log("knapp ska synas");
 
